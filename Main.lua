@@ -1,9 +1,6 @@
--- Hlavní loader
-local REPO_URL = "https://raw.githubusercontent.com/TVUJ_NICK/Quantum/main/" -- ZMĚŇ SI TVŮJ_NICK
+-- Main.lua
+local REPO_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/"
 
-local function loadMod(path)
-    return loadstring(game:HttpGet(REPO_URL .. path))()
-end
-
--- Načtení hlavního skriptu
-loadMod("Main.lua")
+-- Načtení funkcí z modulů
+local movementMod = loadstring(game:HttpGet(REPO_URL .. "Modules/Movement.lua"))()
+local visualsMod = loadstring(game:HttpGet(REPO_URL .. "Modules/Visuals.lua"))()
