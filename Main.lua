@@ -1,3 +1,13 @@
+-- Main.lua na úplný začátek
+if getgenv().QuantumUI then
+    pcall(function() getgenv().QuantumUI:Destroy() end)
+end
+
+-- ... zbytek tvého kódu ...
+
+-- Až vytvoříš okno, ulož si ho do globální proměnné:
+getgenv().QuantumUI = library
+
 -- Main.lua
 local REPO_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/"
 
@@ -61,3 +71,4 @@ config_sec:CreateButton("Unload Script", function()
 end)
 
 print("Quantum Evolution V3.3 Loaded!")
+
