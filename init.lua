@@ -1,9 +1,5 @@
--- Hlavní loader
-local REPO_URL = "https://raw.githubusercontent.com/Eskymaq/Quantum/main/"
+-- init.lua
+local REPO_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/"
 
-local function loadMod(path)
-    return loadstring(game:HttpGet(REPO_URL .. path))()
-end
-
--- Načtení hlavního skriptu
-loadMod("Main.lua")
+-- Spustí hlavní skript
+loadstring(game:HttpGet(REPO_URL .. "Main.lua"))()
