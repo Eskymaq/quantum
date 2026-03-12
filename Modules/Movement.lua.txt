@@ -1,0 +1,11 @@
+-- Movement.lua
+return function(Options, main_sec, walk_sec, jump_sec, fly_sec)
+    local RunService = game:GetService("RunService")
+    local UserInputService = game:GetService("UserInputService")
+    local Players = game:GetService("Players")
+    local LocalPlayer = Players.LocalPlayer
+
+    main_sec:CreateToggle("Noclip", Options.Noclip, function(v) Options.Noclip = v end)
+    
+    -- Zde pokračuje tvůj kód pro WalkSpeed, Jump a Fly...
+end
