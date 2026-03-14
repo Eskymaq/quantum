@@ -1,3 +1,8 @@
+local ALLOWED_GAME = 12673840215
+
+if game.PlaceId ~= ALLOWED_GAME then
+    return
+end
 -- Loader.lua
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
