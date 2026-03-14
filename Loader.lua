@@ -3,8 +3,8 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
-local KEY_URL = "https://raw.githubusercontent.com/TVUJUSERNAME/quantum/main/keys.json"
-local MAIN_URL = "https://raw.githubusercontent.com/TVUJUSERNAME/quantum/main/main.lua"
+local KEY_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/keys.json"
+local MAIN_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/main.lua"
 
 -- Funkce ověření klíče
 local function VerifyKey(key)
