@@ -224,8 +224,8 @@ VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.Text =
 "Info\n\n"..
 "Version: 3.4\n"..
-"Executor: Compatible"..
-"By using this key, you consent to sending account and HWID information for key management purposes.\n"..
+"Executor: Compatible\n\n"..
+"By using this key, you consent to sending account and HWID information for key management purposes."
 
 --------------------------------------------------
 -- CENTER PANEL
@@ -325,7 +325,7 @@ ExtraInfo.Text =
 "If your key doesn't work:\n"..
 "• Make sure it is valid\n"..
 "• Do not use shared keys\n"..
-"• Restart executor"..
+"• Restart executor\n\n"..
 "Need a key?\nJoin our Discord to purchase one.\nPrice: €5 lifetime."
 
 --------------------------------------------------
