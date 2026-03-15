@@ -240,38 +240,12 @@ local function PlayIntro(callback)
     callback()
 end
 -- ==========================================
--- SPLASH WITH BLUR AND EFFECTS + KEY SYSTEM
+-- SPLASH WITH BLUR AND EFFECTS
 -- ==========================================
 
 local function CreateSplashScreen(callback)
     local gui = Instance.new("ScreenGui")
     gui.Parent = gethui()
-
--- KEY SYSTEM
-local HttpService = game:GetService("HttpService")
-
-local KEY_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/keys.json"
-
-local Keys = HttpService:JSONDecode(game:HttpGet(KEY_URL))
-
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-
-local function VerifyKey(key)
-
-    if not Keys[key] then
-        return false
-    end
-
-    if Keys[key] == "" then
-        return true
-    end
-
-    if Keys[key] == HWID then
-        return true
-    end
-
-    return false
-end
 
     -- BLUR BACKGROUND
     local blur = Instance.new("BlurEffect")
@@ -329,7 +303,7 @@ end
     logText.TextSize = 14
     logText.BackgroundTransparency = 1
 
-    logText.Text = 
+    logText.Text =
         "• v3.4:\n".. 
         "• Intro animation added\n".. 
         "• Improved splash screen\n".. 
@@ -407,21 +381,10 @@ end
     status.BackgroundColor3 = Color3.fromRGB(46,204,113)
     Instance.new("UICorner", status).CornerRadius = UDim.new(1,0)
 
-    -- KEY INPUT
-    local keyBox = Instance.new("TextBox", rightFrame)
-    keyBox.Size = UDim2.new(0.8,0,0,40)
-    keyBox.Position = UDim2.new(0.1,0,0.67,0)
-    keyBox.PlaceholderText = "Enter your key..."
-    keyBox.Text = ""
-    keyBox.TextColor3 = Color3.fromRGB(255,255,255)
-    keyBox.BackgroundColor3 = Color3.fromRGB(40,40,40)
-    Instance.new("UICorner", keyBox).CornerRadius = UDim.new(0,6)
-    keyBox.ClearTextOnFocus = false
-
     -- BUTTONS
     local discord = Instance.new("TextButton", rightFrame)
     discord.Size = UDim2.new(0.8,0,0,55)
-    discord.Position = UDim2.new(0.1,0,0.55,0)
+    discord.Position = UDim2.new(0.1,0,0.65,0)
     discord.Text = "Discord"
     discord.Font = Enum.Font.GothamBold
     discord.TextSize = 18
@@ -431,7 +394,7 @@ end
 
     local exec = Instance.new("TextButton", rightFrame)
     exec.Size = UDim2.new(0.8,0,0,55)
-    exec.Position = UDim2.new(0.1,0,0.75,0)
+    exec.Position = UDim2.new(0.1,0,0.80,0)
     exec.Text = "Execute Script"
     exec.Font = Enum.Font.GothamBold
     exec.TextSize = 18
@@ -439,63 +402,11 @@ end
     exec.BackgroundColor3 = Color3.fromRGB(46,204,113)
     Instance.new("UICorner", exec).CornerRadius = UDim.new(0,8)
 
-    local footer = Instance.new("TextLabel", frame)
-    footer.Size = UDim2.new(0.95,0,0,20)
-    footer.Position = UDim2.new(0,0,1,-25)
-    footer.Text = "© 2026 Quantum Scripts"
-    footer.TextColor3 = Color3.fromRGB(120,120,120)
-    footer.TextSize = 12
-    footer.Font = Enum.Font.Gotham
-    footer.TextXAlignment = Enum.TextXAlignment.Right
-    footer.BackgroundTransparency = 1
-
-    -- ADD EFFECTS
-    -- 1. PARALLAX / mouse movement effect
-    UserInputService.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement then
-            local viewport = workspace.CurrentCamera.ViewportSize
-            local x = (input.Position.X/viewport.X - 0.5) * 15
-            local y = (input.Position.Y/viewport.Y - 0.5) * 15
-            TweenService:Create(frame, TweenInfo.new(0.2,Enum.EasingStyle.Quad), {Position = UDim2.new(.5,-300+x,.5,-200+y)}):Play()
-        end
-    end)
-
-    -- 2. BUTTON HOVER AND CLICK RIPPLE
-    local function addButtonEffects(button)
-        button.MouseEnter:Connect(function()
-            TweenService:Create(button,TweenInfo.new(0.2),{Size=UDim2.new(0.82*0.8,0,0,60)}):Play()
-        end)
-        button.MouseLeave:Connect(function()
-            TweenService:Create(button,TweenInfo.new(0.2),{Size=UDim2.new(0.8,0,0,55)}):Play()
-        end)
-        button.MouseButton1Down:Connect(function()
-            local ripple = Instance.new("Frame")
-            ripple.Size = UDim2.new(0,0,0,0)
-            ripple.Position = UDim2.new(.5,0,.5,0)
-            ripple.BackgroundColor3 = Color3.new(1,1,1)
-            ripple.BackgroundTransparency = 0.6
-            ripple.Parent = button
-            Instance.new("UICorner",ripple).CornerRadius = UDim.new(1,0)
-            TweenService:Create(ripple,TweenInfo.new(0.5),{Size=UDim2.new(3,0,3,0),BackgroundTransparency=1,Position=UDim2.new(-1,0,-1,0)}):Play()
-            game.Debris:AddItem(ripple,0.6)
-        end)
-    end
-
-    addButtonEffects(discord)
-    addButtonEffects(exec)
-
     discord.MouseButton1Click:Connect(function()
         setclipboard(DISCORD_LINK)
     end)
 
     exec.MouseButton1Click:Connect(function()
-        local key = keyBox.Text
-        if not VerifyKey(key) then
-            warn("Invalid or HWID mismatch key!")
-            keyBox.TextColor3 = Color3.fromRGB(255,0,0)
-            return
-        end
-        -- fade out frame + blur
         TweenService:Create(frame,TweenInfo.new(0.4),{Size=UDim2.new(0,0,0,0),Position=UDim2.new(.5,0,.5,0)}):Play()
         TweenService:Create(blur,TweenInfo.new(0.4),{Size=0}):Play()
         task.wait(0.4)
