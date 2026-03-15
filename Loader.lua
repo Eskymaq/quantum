@@ -187,8 +187,9 @@ VersionInfo.Text =
 "Executor: Compatible\n\n"..
 "By using this key, you\n"..
 "consent to sending account\n"..
-"and HWID information for key\n"..
-"management purposes."
+"and HWID information\n"..
+"for key management\n"..
+"purposes."
 
 -- Quick Tiús Label
 local TipsInfo = Instance.new("TextLabel", Scroll)
