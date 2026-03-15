@@ -171,7 +171,9 @@ VersionInfo.Text =
 "Loader Info\n\n"..
 "Version: 1.0\n"..
 "Executor: Compatible\n"..
-"By using this key, you consent to sending account and HWID information for key management purposes."
+"By using this key, you consent to sending\n"..
+"account and HWID information for key\n"..
+"management purposes."
 
 --------------------------------------------------
 -- CENTER PANEL
