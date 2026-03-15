@@ -144,11 +144,19 @@ LeftPanel.Size = UDim2.new(0.3,0,1,-40)
 LeftPanel.Position = UDim2.new(0,0,0,40)
 LeftPanel.BackgroundTransparency = 1
 
--- SCRIPT INFO
+-- Scrolling Frame
+local Scroll = Instance.new("ScrollingFrame", LeftPanel)
+Scroll.Size = UDim2.new(1,-20,1,-20)
+Scroll.Position = UDim2.new(0,10,0,10)
+Scroll.BackgroundTransparency = 1
+Scroll.BorderSizePixel = 0
+Scroll.CanvasSize = UDim2.new(0,0,2,0) -- výška plátna, můžeš dynamicky měnit
+Scroll.ScrollBarThickness = 6
 
-local ScriptInfo = Instance.new("TextLabel", LeftPanel)
-ScriptInfo.Size = UDim2.new(1,-20,0,130)
-ScriptInfo.Position = UDim2.new(0,10,0,10)
+-- Script Info Label
+local ScriptInfo = Instance.new("TextLabel", Scroll)
+ScriptInfo.Size = UDim2.new(1,0,0,130)
+ScriptInfo.Position = UDim2.new(0,0,0,0)
 ScriptInfo.BackgroundTransparency = 1
 ScriptInfo.Font = Enum.Font.Gotham
 ScriptInfo.TextSize = 13
@@ -156,19 +164,17 @@ ScriptInfo.TextColor3 = Color3.fromRGB(200,200,200)
 ScriptInfo.TextWrapped = true
 ScriptInfo.TextXAlignment = Enum.TextXAlignment.Left
 ScriptInfo.TextYAlignment = Enum.TextYAlignment.Top
-
-ScriptInfo.Text =
+ScriptInfo.Text = 
 "Quantum Script\n\n"..
 "• Advanced automation\n"..
 "• Optimized performance\n"..
 "• Frequent updates\n\n"..
 "This loader downloads the latest version automatically."
 
--- VERSION INFO
-
-local VersionInfo = Instance.new("TextLabel", LeftPanel)
-VersionInfo.Size = UDim2.new(1,-20,0,100)
-VersionInfo.Position = UDim2.new(0,10,0,150)
+-- Version Info Label
+local VersionInfo = Instance.new("TextLabel", Scroll)
+VersionInfo.Size = UDim2.new(1,0,0,170)
+VersionInfo.Position = UDim2.new(0,0,0,140)
 VersionInfo.BackgroundTransparency = 1
 VersionInfo.Font = Enum.Font.Gotham
 VersionInfo.TextSize = 13
@@ -176,12 +182,14 @@ VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.TextWrapped = true
 VersionInfo.TextXAlignment = Enum.TextXAlignment.Left
 VersionInfo.TextYAlignment = Enum.TextYAlignment.Top
-
-VersionInfo.Text =
+VersionInfo.Text = 
 "Loader Info\n\n"..
 "Version: 1.0\n"..
 "Executor: Compatible\n\n"..
 "By using this key, you consent to sending account and HWID information for key management purposes."
+
+-- Update CanvasSize dynamically based on content
+Scroll.CanvasSize = UDim2.new(0,0,0, ScriptInfo.AbsoluteSize.Y + VersionInfo.AbsoluteSize.Y + 10)
 
 --------------------------------------------------
 -- CENTER PANEL
