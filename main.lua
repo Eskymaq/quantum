@@ -1,3 +1,18 @@
+-- CONFIG
+local SCRIPT_VERSION = "1.0"
+local LIBRARY_ID = "quantum_library"
+local CONFIG_FILE = "Quantum_Config.json"
+
+-- SERVICES
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local HttpService = game:GetService("HttpService")
+
+
+LoadMainScript()
+
 -- ==========================================
 -- MAIN SCRIPT
 -- ==========================================
