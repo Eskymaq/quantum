@@ -1,4 +1,48 @@
 --------------------------------------------------
+-- ANTI-DUMP / ANTI-TAMPER
+--------------------------------------------------
+
+-- Zabrání spuštění ve Studiu
+if game:GetService("RunService"):IsStudio() then
+    return
+end
+
+-- Zkontroluje, jestli GUI není odstraněno
+task.spawn(function()
+    while task.wait(3) do
+        if not ScreenGui or not ScreenGui.Parent then
+            game:Shutdown()
+        end
+    end
+end)
+
+-- Hook na loadstring pro omezení jednoduchého dumpu
+if hookfunction then
+    local oldLoadstring = loadstring
+    loadstring = function(...)
+        if not checkcaller() then
+            return
+        end
+        return oldLoadstring(...)
+    end
+end
+
+-- Executor detection (lze rozšířit)
+local executor = identifyexecutor and identifyexecutor() or "Unknown"
+if executor == "Synapse X" or executor == "ProtoSmasher" then
+    return
+end
+
+-- Fake code pro ztížení dumpu
+local function fakeWork()
+    for i = 1, 50 do
+        math.random()
+        coroutine.yield()
+    end
+end
+task.spawn(fakeWork)
+
+--------------------------------------------------
 -- GAME CHECK
 --------------------------------------------------
 
