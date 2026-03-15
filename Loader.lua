@@ -170,8 +170,9 @@ ScriptInfo.TextColor3 = Color3.fromRGB(200,200,200)
 ScriptInfo.TextWrapped = true
 ScriptInfo.TextXAlignment = Enum.TextXAlignment.Left
 ScriptInfo.TextYAlignment = Enum.TextYAlignment.Top
+ScriptInfo.RichText = true
 ScriptInfo.Text =
-"Quantum Script\n\n"..
+"<font color='#4DA6FF'><b>Script Info</b></font>\n\n"..
 "• Advanced automation\n"..
 "• Optimized performance\n"..
 "• Frequent updates\n\n"..
@@ -188,8 +189,9 @@ VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.TextWrapped = true
 VersionInfo.TextXAlignment = Enum.TextXAlignment.Left
 VersionInfo.TextYAlignment = Enum.TextYAlignment.Top
+VersionInfo.RichText = true
 VersionInfo.Text =
-"Loader Info\n\n"..
+"<font color='#FFD93D'><b>Loader Info</b></font>\n\n"..
 "Version: 1.0\n"..
 "Executor: Compatible\n\n"..
 "By using this key you consent to sending account and HWID information for key management."
@@ -224,8 +226,9 @@ CreditsInfo.TextColor3 = Color3.fromRGB(170,170,170)
 CreditsInfo.TextWrapped = true
 CreditsInfo.TextXAlignment = Enum.TextXAlignment.Left
 CreditsInfo.TextYAlignment = Enum.TextYAlignment.Top
+CreditsInfo.RichText = true
 CreditsInfo.Text =
-"Credits\n\n"..
+"<font color='#B784F7'><b>Credits</b></font>\n\n"..
 "Creator: Eskymaq\n"..
 "UI Design: Quantum\n"..
 "Support: Discord"
