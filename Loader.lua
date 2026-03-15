@@ -5,12 +5,15 @@ local UIS = game:GetService("UserInputService")
 
 local KEY_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/keys.json"
 local MAIN_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/main.lua"
-local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf-ecZo70yXTk04Ohed9JO7EF4YmnwPzhdS8UOAzKda7A_bkZ34C-GSHdKMf"
+
+local WEBHOOK = "PASTE_DISCORD_WEBHOOK_HERE"
 
 --------------------------------------------------
 -- LOG SYSTEM
 --------------------------------------------------
+
 local function SendLog(key)
+
     local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
     local player = Players.LocalPlayer
 
@@ -30,47 +33,67 @@ local function SendLog(key)
     }
 
     pcall(function()
-        request({
-            Url = WEBHOOK,
-            Method = "POST",
-            Headers = {["Content-Type"] = "application/json"},
-            Body = HttpService:JSONEncode(data)
-        })
+
+        local req = request or http_request or syn and syn.request
+
+        if req then
+            req({
+                Url = WEBHOOK,
+                Method = "POST",
+                Headers = {
+                    ["Content-Type"] = "application/json"
+                },
+                Body = HttpService:JSONEncode(data)
+            })
+        end
+
     end)
+
 end
 
 --------------------------------------------------
--- KEY CHECK
+-- KEY VERIFY
 --------------------------------------------------
+
 local function VerifyKey(key)
-    local ok,data = pcall(function()
+    local ok, data = pcall(function()
         return HttpService:JSONDecode(game:HttpGet(KEY_URL))
     end)
+
     if not ok then return false end
 
     local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-    if not data[key] then return false end
-    if data[key] == "" or data[key] == HWID then return true end
+
+    if not data[key] then
+        return false
+    end
+
+    if data[key] == "" or data[key] == HWID then
+        return true
+    end
+
     return false
 end
 
 --------------------------------------------------
 -- GUI
 --------------------------------------------------
+
 local ScreenGui = Instance.new("ScreenGui", gethui())
 
 local Frame = Instance.new("Frame", ScreenGui)
-Frame.Size = UDim2.new(0,650,0,360)
+Frame.Size = UDim2.new(0, 650, 0, 360)
 Frame.Position = UDim2.new(0.5,-325,0.5,-180)
 Frame.BackgroundColor3 = Color3.fromRGB(24,24,24)
 Frame.BorderSizePixel = 0
-Instance.new("UICorner",Frame)
+Instance.new("UICorner", Frame)
 
 local Stroke = Instance.new("UIStroke", Frame)
 Stroke.Color = Color3.fromRGB(70,70,70)
 Stroke.Thickness = 2
 
 -- TOP BAR
+
 local TopBar = Instance.new("Frame", Frame)
 TopBar.Size = UDim2.new(1,0,0,40)
 TopBar.BackgroundColor3 = Color3.fromRGB(30,30,30)
@@ -86,8 +109,9 @@ Title.TextColor3 = Color3.new(1,1,1)
 Title.BackgroundTransparency = 1
 
 --------------------------------------------------
--- LEFT PANEL (INFO)
+-- LEFT PANEL
 --------------------------------------------------
+
 local LeftPanel = Instance.new("Frame", Frame)
 LeftPanel.Size = UDim2.new(0.3,0,1,-40)
 LeftPanel.Position = UDim2.new(0,0,0,40)
@@ -117,14 +141,15 @@ VersionInfo.Font = Enum.Font.Gotham
 VersionInfo.TextSize = 12
 VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.Text =
-"Loader Information\n\n"..
+"Loader Info\n\n"..
 "Version: 1.0\n"..
-"Executor Support: Yes\n"..
-"Auto Updates: Enabled"
+"Source: GitHub\n"..
+"Executor: Compatible"
 
 --------------------------------------------------
--- CENTER PANEL (KEY INPUT)
+-- CENTER PANEL
 --------------------------------------------------
+
 local CenterPanel = Instance.new("Frame", Frame)
 CenterPanel.Size = UDim2.new(0.4,0,1,-40)
 CenterPanel.Position = UDim2.new(0.3,0,0,40)
@@ -151,16 +176,16 @@ KeyBox.BackgroundColor3 = Color3.fromRGB(35,35,35)
 KeyBox.BorderSizePixel = 0
 Instance.new("UICorner", KeyBox)
 
-local Execute = Instance.new("TextButton", CenterPanel)
-Execute.Size = UDim2.new(1,-20,0,45)
-Execute.Position = UDim2.new(0,10,0,140)
-Execute.Text = "EXECUTE SCRIPT"
-Execute.Font = Enum.Font.GothamBold
-Execute.TextSize = 16
-Execute.TextColor3 = Color3.new(1,1,1)
-Execute.BackgroundColor3 = Color3.fromRGB(46,204,113)
-Execute.BorderSizePixel = 0
-Instance.new("UICorner", Execute)
+local Button = Instance.new("TextButton", CenterPanel)
+Button.Size = UDim2.new(1,-20,0,45)
+Button.Position = UDim2.new(0,10,0,140)
+Button.Text = "EXECUTE SCRIPT"
+Button.Font = Enum.Font.GothamBold
+Button.TextSize = 16
+Button.TextColor3 = Color3.new(1,1,1)
+Button.BackgroundColor3 = Color3.fromRGB(46,204,113)
+Button.BorderSizePixel = 0
+Instance.new("UICorner", Button)
 
 local Status = Instance.new("TextLabel", CenterPanel)
 Status.Size = UDim2.new(1,-20,0,20)
@@ -172,8 +197,9 @@ Status.TextColor3 = Color3.fromRGB(170,170,170)
 Status.BackgroundTransparency = 1
 
 --------------------------------------------------
--- RIGHT PANEL (SECURITY & SUPPORT)
+-- RIGHT PANEL
 --------------------------------------------------
+
 local RightPanel = Instance.new("Frame", Frame)
 RightPanel.Size = UDim2.new(0.3,0,1,-40)
 RightPanel.Position = UDim2.new(0.7,0,0,40)
@@ -210,43 +236,87 @@ ExtraInfo.Text =
 "• Restart executor"
 
 --------------------------------------------------
--- BUTTON EFFECTS
+-- BUTTON EFFECT
 --------------------------------------------------
-Execute.MouseEnter:Connect(function()
-    TweenService:Create(Execute,TweenInfo.new(0.15),{BackgroundColor3 = Color3.fromRGB(60,220,130)}):Play()
+
+Button.MouseEnter:Connect(function()
+    TweenService:Create(Button,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(60,220,130)
+    }):Play()
 end)
-Execute.MouseLeave:Connect(function()
-    TweenService:Create(Execute,TweenInfo.new(0.15),{BackgroundColor3 = Color3.fromRGB(46,204,113)}):Play()
+
+Button.MouseLeave:Connect(function()
+    TweenService:Create(Button,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(46,204,113)
+    }):Play()
 end)
 
 --------------------------------------------------
--- EXECUTE SCRIPT
+-- EXECUTE
 --------------------------------------------------
-Execute.MouseButton1Click:Connect(function()
+
+Button.MouseButton1Click:Connect(function()
+
+    Status.Text = "Status: Checking key..."
+
     local key = KeyBox.Text
-    Status.Text = "Checking key..."
 
-    if not VerifyKey(key) then
-        Status.Text = "Invalid key"
+    if VerifyKey(key) then
+
+        SendLog(key)
+
+        Status.Text = "Status: Key accepted. Loading..."
+
+        task.wait(0.5)
+
+        ScreenGui:Destroy()
+
+        local ok, err = pcall(function()
+            loadstring(game:HttpGet(MAIN_URL))()
+        end)
+
+        if not ok then
+            warn("Failed to load main.lua", err)
+        end
+
+    else
+
+        Status.Text = "Status: Invalid key"
         KeyBox.Text = ""
         KeyBox.PlaceholderText = "Invalid key!"
-        return
+
     end
 
-    SendLog(key)
+end)
 
-    Status.Text = "Key accepted. Launching..."
-    task.wait(0.5)
+--------------------------------------------------
+-- DRAG WINDOW
+--------------------------------------------------
 
-    local ok, err = pcall(function()
-        loadstring(game:HttpGet(MAIN_URL))()
-    end)
+local dragging
+local dragStart
+local startPos
 
-    if not ok then
-        warn("Failed to load main.lua", err)
-        Status.Text = "Failed to load script"
-    else
-        Status.Text = "Script loaded"
-        ScreenGui:Destroy()
+local function update(input)
+    local delta = input.Position - dragStart
+    Frame.Position = UDim2.new(
+        startPos.X.Scale,
+        startPos.X.Offset + delta.X,
+        startPos.Y.Scale,
+        startPos.Y.Offset + delta.Y
+    )
+end
+
+TopBar.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position
+        startPos = Frame.Position
+    end
+end)
+
+UIS.InputChanged:Connect(function(input)
+    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+        update(input)
     end
 end)
