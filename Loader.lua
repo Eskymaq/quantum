@@ -233,12 +233,6 @@ local BottomPadding = Instance.new("Frame", Scroll)
 BottomPadding.Size = UDim2.new(1,0,0,20)
 BottomPadding.BackgroundTransparency = 1
 
--- Update CanvasSize dynamically based on content
-Scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
-local Layout = Instance.new("UIListLayout", Scroll)
-Layout.Padding = UDim.new(0,10)
-Layout.SortOrder = Enum.SortOrder.LayoutOrder
-
 --------------------------------------------------
 -- CENTER PANEL
 --------------------------------------------------
