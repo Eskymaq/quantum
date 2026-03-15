@@ -434,6 +434,8 @@ end
 
 PlayIntro(function()
 
-CreateSplash()
+    CreateSplashScreen(function()
+        LoadMainScript()
+    end)
 
 end)
