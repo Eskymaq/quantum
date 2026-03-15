@@ -139,21 +139,21 @@ Title.BackgroundTransparency = 1
 -- LEFT PANEL
 --------------------------------------------------
 
-local LeftPanel = Instance.new("Frame", Frame)
-LeftPanel.Size = UDim2.new(0.3,0,1,-40)
-LeftPanel.Position = UDim2.new(0,0,0,40)
-LeftPanel.BackgroundTransparency = 1
-
 local ScriptInfo = Instance.new("TextLabel", LeftPanel)
-ScriptInfo.Size = UDim2.new(1,-20,0,180)
-ScriptInfo.Position = UDim2.new(0,10,0,10)
-ScriptInfo.TextWrapped = true
+ScriptInfo.Size = UDim2.new(1, -20, 0, 180) -- Šířka je 100% mínus 20 pixelů, výška 180
+ScriptInfo.Position = UDim2.new(0, 10, 0, 10)
 ScriptInfo.BackgroundTransparency = 1
 ScriptInfo.Font = Enum.Font.Gotham
 ScriptInfo.TextSize = 13
-ScriptInfo.TextColor3 = Color3.fromRGB(210,210,210)
-ScriptInfo.Text =
-"Quantum Script\n\n"..
+ScriptInfo.TextColor3 = Color3.fromRGB(210, 210, 210)
+
+-- ZÁKLADNÍ NASTAVENÍ PRO ZALAMOVÁNÍ
+ScriptInfo.TextWrapped = true        -- Povolí zalamování řádků
+ScriptInfo.TextScaled = false        -- Doporučuji nechat false, jinak se text může příliš zmenšit
+ScriptInfo.TextXAlignment = Enum.TextXAlignment.Left   -- Zarovnání doleva
+ScriptInfo.TextYAlignment = Enum.TextYAlignment.Top    -- Zarovnání nahoru
+
+ScriptInfo.Text = "Quantum Script\n\n"..
 "• Advanced automation\n"..
 "• Optimized performance\n"..
 "• Frequent updates\n\n"..
