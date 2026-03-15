@@ -157,6 +157,21 @@ Status.TextSize = 12
 Status.TextColor3 = Color3.fromRGB(170,170,170)
 Status.BackgroundTransparency = 1
 
+local GetKey = Instance.new("TextButton", CenterPanel)
+GetKey.Size = UDim2.new(1,-20,0,35)
+GetKey.Position = UDim2.new(0,10,0,230)
+GetKey.Text = "GET KEY"
+GetKey.Font = Enum.Font.GothamBold
+GetKey.TextSize = 14
+GetKey.TextColor3 = Color3.new(1,1,1)
+GetKey.BackgroundColor3 = Color3.fromRGB(52,152,219)
+GetKey.BorderSizePixel = 0
+Instance.new("UICorner", GetKey)
+
+GetKey.MouseButton1Click:Connect(function()
+    setclipboard("https://your-key-link.com")
+    Status.Text = "Key link copied to clipboard"
+end)
 --------------------------------------------------
 -- RIGHT PANEL
 --------------------------------------------------
