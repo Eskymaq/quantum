@@ -2,6 +2,27 @@
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
+
+local KEY_URL = "https://raw.githubusercontent.com/TVUJUSERNAME/quantum/main/keys.json"
+local MAIN_URL = "https://raw.githubusercontent.com/TVUJUSERNAME/quantum/main/main.lua"
+
+-- Funkce ověření klíče
+local function VerifyKey(key)
+    local ok, data = pcall(function()
+        return HttpService:JSONDecode(game:HttpGet(KEY_URL))
+    end)
+    if not ok then return false end
+
+    local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+
+    if not data[key] then
+        return false
+    end
+
+    if data[key] == "" or data[key] == HWID then
+        return true
+    end
+
     return false
 end
 
@@ -39,9 +60,9 @@ Button.MouseButton1Click:Connect(function()
         end)
         if not ok then
             warn("Failed to load main.lua", err)
-                else
+        end
+    else
         KeyBox.TextColor3 = Color3.fromRGB(255,0,0)
         KeyBox.Text = "Invalid key!"
-        
     end
 end)
