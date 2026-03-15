@@ -160,7 +160,7 @@ ScriptInfo.Text =
 "This loader downloads the latest version automatically."
 
 local VersionInfo = Instance.new("TextLabel", LeftPanel)
-VersionInfo.Size = UDim2.new(1,-20,0,80)
+VersionInfo.Size = UDim2.new(1,-20,0,140)
 VersionInfo.Position = UDim2.new(0,10,0,150)
 VersionInfo.BackgroundTransparency = 1
 VersionInfo.TextWrapped = true
@@ -171,9 +171,7 @@ VersionInfo.Text =
 "Loader Info\n\n"..
 "Version: 1.0\n"..
 "Executor: Compatible\n"..
-"By using this key, you consent to sending\n"..
-"account and HWID information for key\n"..
-"management purposes."
+"By using this key, you consent to sending account and HWID information for key management purposes."
 
 --------------------------------------------------
 -- CENTER PANEL
