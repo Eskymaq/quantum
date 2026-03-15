@@ -189,6 +189,10 @@ VersionInfo.Text =
 "By using this key, you consent to sending account and HWID information for key management purposes."
 
 -- Update CanvasSize dynamically based on content
+local Layout = Instance.new("UIListLayout", Scroll)
+Layout.Padding = UDim.new(0,10)
+
+Scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
 Scroll.CanvasSize = UDim2.new(0,0,0, ScriptInfo.AbsoluteSize.Y + VersionInfo.AbsoluteSize.Y + 10)
 
 --------------------------------------------------
