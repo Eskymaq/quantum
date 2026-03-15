@@ -150,7 +150,6 @@ Scroll.Size = UDim2.new(1,-20,1,-20)
 Scroll.Position = UDim2.new(0,10,0,10)
 Scroll.BackgroundTransparency = 1
 Scroll.BorderSizePixel = 0
-Scroll.CanvasSize = UDim2.new(0,0,2,0) -- výška plátna, můžeš dynamicky měnit
 Scroll.ScrollBarThickness = 6
 
 -- Script Info Label
@@ -173,7 +172,7 @@ ScriptInfo.Text =
 
 -- Version Info Label
 local VersionInfo = Instance.new("TextLabel", Scroll)
-VersionInfo.Size = UDim2.new(1,0,0,170)
+VersionInfo.Size = UDim2.new(1,0,0,300)
 VersionInfo.Position = UDim2.new(0,0,0,140)
 VersionInfo.BackgroundTransparency = 1
 VersionInfo.Font = Enum.Font.Gotham
@@ -189,11 +188,10 @@ VersionInfo.Text =
 "By using this key, you consent to sending account and HWID information for key management purposes."
 
 -- Update CanvasSize dynamically based on content
+Scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
 local Layout = Instance.new("UIListLayout", Scroll)
 Layout.Padding = UDim.new(0,10)
-
-Scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
-Scroll.CanvasSize = UDim2.new(0,0,0, ScriptInfo.AbsoluteSize.Y + VersionInfo.AbsoluteSize.Y + 10)
+Layout.SortOrder = Enum.SortOrder.LayoutOrder
 
 --------------------------------------------------
 -- CENTER PANEL
