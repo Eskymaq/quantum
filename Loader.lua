@@ -86,10 +86,10 @@ VersionInfo.Font = Enum.Font.Gotham
 VersionInfo.TextSize = 12
 VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.Text =
-"Loader Information\n\n"..
-"Version: 3.4\n"..
-"Auto Updates: Enabled\n"..
-"Executor Support: Yes"
+"Loader Info\n\n"..
+"Version: 1.0\n"..
+"Source: GitHub\n"..
+"Executor: Compatible"
 
 --------------------------------------------------
 -- CENTER PANEL
@@ -141,21 +141,6 @@ Status.TextSize = 12
 Status.TextColor3 = Color3.fromRGB(170,170,170)
 Status.BackgroundTransparency = 1
 
-local GetKey = Instance.new("TextButton", CenterPanel)
-GetKey.Size = UDim2.new(1,-20,0,35)
-GetKey.Position = UDim2.new(0,10,0,230)
-GetKey.Text = "GET KEY"
-GetKey.Font = Enum.Font.GothamBold
-GetKey.TextSize = 14
-GetKey.TextColor3 = Color3.new(1,1,1)
-GetKey.BackgroundColor3 = Color3.fromRGB(52,152,219)
-GetKey.BorderSizePixel = 0
-Instance.new("UICorner", GetKey)
-
-GetKey.MouseButton1Click:Connect(function()
-    setclipboard("https://your-key-link.com")
-    Status.Text = "Key link copied to clipboard"
-end)
 --------------------------------------------------
 -- RIGHT PANEL
 --------------------------------------------------
@@ -175,10 +160,10 @@ Security.TextSize = 13
 Security.TextColor3 = Color3.fromRGB(255,170,0)
 Security.Text =
 "Security Notice\n\n"..
-"Each key is locked to your device (HWID).\n\n"..
-"Using the same key on multiple devices\n"..
-"may automatically invalidate the key.\n\n"..
-"Keep your key private to avoid losing access."
+"• Keys are HWID locked\n"..
+"• Do NOT share your key\n"..
+"• Sharing may result in blacklist\n\n"..
+"Your key will bind to your device."
 
 local ExtraInfo = Instance.new("TextLabel", RightPanel)
 ExtraInfo.Size = UDim2.new(1,-20,0,120)
