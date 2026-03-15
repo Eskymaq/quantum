@@ -170,8 +170,8 @@ VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.Text =
 "Loader Info\n\n"..
 "Version: 1.0\n"..
-"Source: GitHub\n"..
-"Executor: Compatible"
+"Executor: Compatible"..
+"By using this key, you consent to sending account and HWID information for key management purposes.\n"
 
 --------------------------------------------------
 -- CENTER PANEL
