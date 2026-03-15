@@ -190,6 +190,39 @@ VersionInfo.Text =
 "and HWID information for key\n"..
 "management purposes."
 
+-- Quick Tiús Label
+local TipsInfo = Instance.new("TextLabel", Scroll)
+TipsInfo.Size = UDim2.new(1,0,0,120)
+TipsInfo.BackgroundTransparency = 1
+TipsInfo.Font = Enum.Font.Gotham
+TipsInfo.TextSize = 13
+TipsInfo.TextColor3 = Color3.fromRGB(200,200,200)
+TipsInfo.TextWrapped = true
+TipsInfo.TextXAlignment = Enum.TextXAlignment.Left
+TipsInfo.TextYAlignment = Enum.TextYAlignment.Top
+TipsInfo.Text =
+"Quick Tips\n\n"..
+"• Do not share your key\n"..
+"• Restart executor if script fails\n"..
+"• Use a trusted executor\n"..
+"• Rejoin the game if the loader fails"
+
+-- Credits Label
+local CreditsInfo = Instance.new("TextLabel", Scroll)
+CreditsInfo.Size = UDim2.new(1,0,0,100)
+CreditsInfo.BackgroundTransparency = 1
+CreditsInfo.Font = Enum.Font.Gotham
+CreditsInfo.TextSize = 13
+CreditsInfo.TextColor3 = Color3.fromRGB(170,170,170)
+CreditsInfo.TextWrapped = true
+CreditsInfo.TextXAlignment = Enum.TextXAlignment.Left
+CreditsInfo.TextYAlignment = Enum.TextYAlignment.Top
+CreditsInfo.Text =
+"Credits\n\n"..
+"Creator: Eskymaq\n"..
+"UI Design: Quantum\n"..
+"Support: Discord"
+
 -- Update CanvasSize dynamically based on content
 Scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
 local Layout = Instance.new("UIListLayout", Scroll)
