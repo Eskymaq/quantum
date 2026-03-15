@@ -185,7 +185,10 @@ VersionInfo.Text =
 "Loader Info\n\n"..
 "Version: 1.0\n"..
 "Executor: Compatible\n\n"..
-"By using this key, you consent to sending account and HWID information for key management purposes."
+"By using this key, you\n"..
+"consent to sending account\n"..
+"and HWID information for key\n"..
+"management purposes."
 
 -- Update CanvasSize dynamically based on content
 Scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
