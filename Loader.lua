@@ -151,11 +151,18 @@ Scroll.Position = UDim2.new(0,10,0,10)
 Scroll.BackgroundTransparency = 1
 Scroll.BorderSizePixel = 0
 Scroll.ScrollBarThickness = 6
+Scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
+Scroll.CanvasSize = UDim2.new(0,0,0,0)
 
--- Script Info Label
+-- Layout (automatické řazení)
+local Layout = Instance.new("UIListLayout", Scroll)
+Layout.Padding = UDim.new(0,10)
+Layout.SortOrder = Enum.SortOrder.LayoutOrder
+
+-- Script Info
 local ScriptInfo = Instance.new("TextLabel", Scroll)
-ScriptInfo.Size = UDim2.new(1,0,0,130)
-ScriptInfo.Position = UDim2.new(0,0,0,0)
+ScriptInfo.Size = UDim2.new(1,0,0,0)
+ScriptInfo.AutomaticSize = Enum.AutomaticSize.Y
 ScriptInfo.BackgroundTransparency = 1
 ScriptInfo.Font = Enum.Font.Gotham
 ScriptInfo.TextSize = 13
@@ -163,17 +170,17 @@ ScriptInfo.TextColor3 = Color3.fromRGB(200,200,200)
 ScriptInfo.TextWrapped = true
 ScriptInfo.TextXAlignment = Enum.TextXAlignment.Left
 ScriptInfo.TextYAlignment = Enum.TextYAlignment.Top
-ScriptInfo.Text = 
+ScriptInfo.Text =
 "Quantum Script\n\n"..
 "• Advanced automation\n"..
 "• Optimized performance\n"..
 "• Frequent updates\n\n"..
 "This loader downloads the latest version automatically."
 
--- Version Info Label
+-- Loader Info
 local VersionInfo = Instance.new("TextLabel", Scroll)
-VersionInfo.Size = UDim2.new(1,0,0,300)
-VersionInfo.Position = UDim2.new(0,0,0,140)
+VersionInfo.Size = UDim2.new(1,0,0,0)
+VersionInfo.AutomaticSize = Enum.AutomaticSize.Y
 VersionInfo.BackgroundTransparency = 1
 VersionInfo.Font = Enum.Font.Gotham
 VersionInfo.TextSize = 13
@@ -181,19 +188,16 @@ VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.TextWrapped = true
 VersionInfo.TextXAlignment = Enum.TextXAlignment.Left
 VersionInfo.TextYAlignment = Enum.TextYAlignment.Top
-VersionInfo.Text = 
+VersionInfo.Text =
 "Loader Info\n\n"..
 "Version: 1.0\n"..
 "Executor: Compatible\n\n"..
-"By using this key, you\n"..
-"consent to sending account\n"..
-"and HWID information\n"..
-"for key management\n"..
-"purposes."
+"By using this key you consent to sending account and HWID information for key management."
 
--- Quick Tips Label
+-- Quick Tips
 local TipsInfo = Instance.new("TextLabel", Scroll)
-TipsInfo.Size = UDim2.new(1,0,0,120)
+TipsInfo.Size = UDim2.new(1,0,0,0)
+TipsInfo.AutomaticSize = Enum.AutomaticSize.Y
 TipsInfo.BackgroundTransparency = 1
 TipsInfo.Font = Enum.Font.Gotham
 TipsInfo.TextSize = 13
@@ -206,11 +210,12 @@ TipsInfo.Text =
 "• Do not share your key\n"..
 "• Restart executor if script fails\n"..
 "• Use a trusted executor\n"..
-"• Rejoin the game if the loader fails"
+"• Rejoin the game if loader fails"
 
--- Credits Label
+-- Credits
 local CreditsInfo = Instance.new("TextLabel", Scroll)
-CreditsInfo.Size = UDim2.new(1,0,0,100)
+CreditsInfo.Size = UDim2.new(1,0,0,0)
+CreditsInfo.AutomaticSize = Enum.AutomaticSize.Y
 CreditsInfo.BackgroundTransparency = 1
 CreditsInfo.Font = Enum.Font.Gotham
 CreditsInfo.TextSize = 13
