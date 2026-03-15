@@ -6,14 +6,12 @@ local UIS = game:GetService("UserInputService")
 local KEY_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/keys.json"
 local MAIN_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/main.lua"
 
-local WEBHOOK = "YOUR_WEBHOOK"
+local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf-ecZo70yXTk04Ohed9JO7EF4YmnwPzhdS8UOAzKda7A_bkZ34C-GSHdKMf"
 
 --------------------------------------------------
 -- LOG SYSTEM
 --------------------------------------------------
-
 local function SendLog(key)
-
     local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
     local player = Players.LocalPlayer
 
@@ -36,45 +34,36 @@ local function SendLog(key)
         request({
             Url = WEBHOOK,
             Method = "POST",
-            Headers = {
-                ["Content-Type"] = "application/json"
-            },
+            Headers = {["Content-Type"] = "application/json"},
             Body = HttpService:JSONEncode(data)
         })
     end)
-
 end
 
 --------------------------------------------------
 -- KEY CHECK
 --------------------------------------------------
-
 local function VerifyKey(key)
-
     local ok,data = pcall(function()
         return HttpService:JSONDecode(game:HttpGet(KEY_URL))
     end)
-
     if not ok then return false end
 
     local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
-    if not data[key] then
-        return false
-    end
+    if not data[key] then return false end
 
+    -- HWID lock check
     if data[key] == "" or data[key] == HWID then
         return true
     end
 
     return false
-
 end
 
 --------------------------------------------------
 -- GUI
 --------------------------------------------------
-
 local ScreenGui = Instance.new("ScreenGui", gethui())
 
 local Frame = Instance.new("Frame", ScreenGui)
@@ -123,37 +112,55 @@ Status.TextSize = 12
 Status.BackgroundTransparency = 1
 
 --------------------------------------------------
+-- RIGHT PANEL INFO
+--------------------------------------------------
+local InfoFrame = Instance.new("Frame",Frame)
+InfoFrame.Size = UDim2.new(1,0,0.3,0)
+InfoFrame.Position = UDim2.new(0,0,0,0)
+InfoFrame.BackgroundTransparency = 1
+
+local InfoText = Instance.new("TextLabel",InfoFrame)
+InfoText.Size = UDim2.new(1,-20,1,-20)
+InfoText.Position = UDim2.new(0,10,0,10)
+InfoText.TextWrapped = true
+InfoText.BackgroundTransparency = 1
+InfoText.Font = Enum.Font.Gotham
+InfoText.TextSize = 13
+InfoText.TextColor3 = Color3.fromRGB(210,210,210)
+InfoText.Text = [[
+Quantum Loader
+• HWID locked keys
+• Logs are sent via Discord webhook
+• Do not share your key
+• Compatible with most executors
+]]
+
+--------------------------------------------------
 -- EXECUTE
 --------------------------------------------------
-
 Execute.MouseButton1Click:Connect(function()
-
     local key = KeyBox.Text
-
-    Status.Text = "Checking key..."
+    Status.Text = "Status: Checking key..."
 
     if not VerifyKey(key) then
-        Status.Text = "Invalid key"
+        Status.Text = "Status: Invalid key"
         return
     end
 
     SendLog(key)
 
-    Status.Text = "Key accepted"
+    Status.Text = "Status: Key accepted. Launching..."
+    task.wait(0.5)
 
-    task.wait(0.4)
-
-    Status.Text = "Loading script..."
-
-    local ok,err = pcall(function()
+    local ok, err = pcall(function()
         loadstring(game:HttpGet(MAIN_URL))()
     end)
 
-    if ok then
-        Status.Text = "Script loaded successfully"
+    if not ok then
+        warn("Failed to load main.lua", err)
+        Status.Text = "Status: Failed to load script"
     else
-        Status.Text = "Failed to load script"
-        warn(err)
+        Status.Text = "Status: Script loaded"
+        ScreenGui:Destroy()
     end
-
 end)
