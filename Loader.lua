@@ -140,12 +140,12 @@ Title.BackgroundTransparency = 1
 --------------------------------------------------
 
 local ScriptInfo = Instance.new("TextLabel", LeftPanel)
-ScriptInfo.Size = UDim2.new(1, -20, 0, 180) -- Šířka je 100% mínus 20 pixelů, výška 180
-ScriptInfo.Position = UDim2.new(0, 10, 0, 10)
-ScriptInfo.BackgroundTransparency = 1
-ScriptInfo.Font = Enum.Font.Gotham
-ScriptInfo.TextSize = 13
-ScriptInfo.TextColor3 = Color3.fromRGB(210, 210, 210)
+VersionInfo.Size = UDim2.new(1, -20, 0, 150) -- Zvětšil jsem výšku na 150, aby se tam text pohodlně vešel
+VersionInfo.Position = UDim2.new(0, 10, 0, 150)
+VersionInfo.BackgroundTransparency = 1
+VersionInfo.Font = Enum.Font.Gotham
+VersionInfo.TextSize = 12
+VersionInfo.TextColor3 = Color3.fromRGB(170, 170, 170)
 
 -- ZÁKLADNÍ NASTAVENÍ PRO ZALAMOVÁNÍ
 ScriptInfo.TextWrapped = true        -- Povolí zalamování řádků
