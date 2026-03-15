@@ -160,7 +160,7 @@ ScriptInfo.Text =
 "This loader downloads the latest version automatically."
 
 local VersionInfo = Instance.new("TextLabel", LeftPanel)
-VersionInfo.Size = UDim2.new(1,-20,0,140)
+VersionInfo.Size = UDim2.new(1,-20,0,120)
 VersionInfo.Position = UDim2.new(0,10,0,150)
 VersionInfo.BackgroundTransparency = 1
 VersionInfo.TextWrapped = true
