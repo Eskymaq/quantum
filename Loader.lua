@@ -167,7 +167,7 @@ ScriptInfo.Text =
 -- VERSION INFO
 
 local VersionInfo = Instance.new("TextLabel", LeftPanel)
-VersionInfo.Size = UDim2.new(1,-20,0,170)
+VersionInfo.Size = UDim2.new(1,-20,0,100)
 VersionInfo.Position = UDim2.new(0,10,0,150)
 VersionInfo.BackgroundTransparency = 1
 VersionInfo.Font = Enum.Font.Gotham
