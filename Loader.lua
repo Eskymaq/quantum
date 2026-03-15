@@ -222,10 +222,10 @@ VersionInfo.Font = Enum.Font.Gotham
 VersionInfo.TextSize = 12
 VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.Text =
-"Loader Info\n\n"..
-"Version: 1.0\n"..
-"Source: GitHub\n"..
+"Info\n\n"..
+"Version: 3.4\n"..
 "Executor: Compatible"
+"By using this key, you consent to sending account and HWID information for key management purposes.\n"..
 
 --------------------------------------------------
 -- CENTER PANEL
@@ -256,6 +256,17 @@ KeyBox.TextColor3 = Color3.fromRGB(255,255,255)
 KeyBox.BackgroundColor3 = Color3.fromRGB(35,35,35)
 KeyBox.BorderSizePixel = 0
 Instance.new("UICorner", KeyBox)
+
+local HowToKey = Instance.new("TextLabel", CenterPanel)
+HowToKey.Size = UDim2.new(1,-20,0,40)
+HowToKey.Position = UDim2.new(0,10,0,230)
+HowToKey.BackgroundTransparency = 1
+HowToKey.TextWrapped = true
+HowToKey.Font = Enum.Font.Gotham
+HowToKey.TextSize = 12
+HowToKey.TextColor3 = Color3.fromRGB(170,170,170)
+HowToKey.Text =
+"No key? Join our Discord to purchase a key.\nPrice: €5 lifetime access."
 
 local Button = Instance.new("TextButton", CenterPanel)
 Button.Size = UDim2.new(1,-20,0,45)
@@ -315,6 +326,7 @@ ExtraInfo.Text =
 "• Make sure it is valid\n"..
 "• Do not use shared keys\n"..
 "• Restart executor"
+"Need a key?\nJoin our Discord to purchase one.\nPrice: €5 lifetime."
 
 --------------------------------------------------
 -- BUTTON EFFECT
