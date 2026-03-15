@@ -6,7 +6,7 @@ local UIS = game:GetService("UserInputService")
 local KEY_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/keys.json"
 local MAIN_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/main.lua"
 
-local WEBHOOK = "PASTE_DISCORD_WEBHOOK_HERE"
+local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf-ecZo70yXTk04Ohed9JO7EF4YmnwPzhdS8UOAzKda7A_bkZ34C-GSHdKMf"
 
 --------------------------------------------------
 -- LOG SYSTEM
@@ -170,8 +170,8 @@ VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.Text =
 "Loader Info\n\n"..
 "Version: 1.0\n"..
-"Executor: Compatible"..
-"By using this key, you consent to sending account and HWID information for key management purposes.\n"
+"Executor: Compatible\n"..
+"By using this key, you consent to sending account and HWID information for key management purposes."
 
 --------------------------------------------------
 -- CENTER PANEL
@@ -263,8 +263,72 @@ ExtraInfo.Text =
 "• Restart executor"
 
 --------------------------------------------------
+-- HOW TO GET KEY PANEL
+--------------------------------------------------
+
+local DISCORD_LINK = "https://discord.gg/EQGcpuncjn"
+
+local BottomPanel = Instance.new("Frame", Frame)
+BottomPanel.Size = UDim2.new(1,0,0,60)
+BottomPanel.Position = UDim2.new(0,0,1,-60)
+BottomPanel.BackgroundColor3 = Color3.fromRGB(28,28,28)
+BottomPanel.BorderSizePixel = 0
+Instance.new("UICorner", BottomPanel)
+
+local HowText = Instance.new("TextLabel", BottomPanel)
+HowText.Size = UDim2.new(0.7,-20,1,0)
+HowText.Position = UDim2.new(0,10,0,0)
+HowText.BackgroundTransparency = 1
+HowText.TextWrapped = true
+HowText.Font = Enum.Font.Gotham
+HowText.TextSize = 13
+HowText.TextColor3 = Color3.fromRGB(200,200,200)
+
+HowText.Text =
+"How to get a key?\nJoin our Discord server and purchase a lifetime key for €5."
+
+local DiscordButton = Instance.new("TextButton", BottomPanel)
+DiscordButton.Size = UDim2.new(0.25,0,0.6,0)
+DiscordButton.Position = UDim2.new(0.73,0,0.2,0)
+DiscordButton.Text = "JOIN DISCORD"
+DiscordButton.Font = Enum.Font.GothamBold
+DiscordButton.TextSize = 14
+DiscordButton.TextColor3 = Color3.new(1,1,1)
+DiscordButton.BackgroundColor3 = Color3.fromRGB(88,101,242)
+DiscordButton.BorderSizePixel = 0
+Instance.new("UICorner", DiscordButton)
+
+--------------------------------------------------
+-- COPY DISCORD LINK
+--------------------------------------------------
+
+DiscordButton.MouseButton1Click:Connect(function()
+
+    if setclipboard then
+        setclipboard(DISCORD_LINK)
+        Status.Text = "Status: Discord link copied to clipboard"
+    else
+        Status.Text = "Status: Executor doesn't support clipboard. GET BETTER EXECUTOR"
+    end
+
+end)
+
+--------------------------------------------------
 -- BUTTON EFFECT
 --------------------------------------------------
+
+DiscordButton.MouseEnter:Connect(function()
+    TweenService:Create(DiscordButton,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(110,120,255)
+    }):Play()
+end)
+
+DiscordButton.MouseLeave:Connect(function()
+    TweenService:Create(DiscordButton,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(88,101,242)
+    }):Play()
+end)
+
 
 Button.MouseEnter:Connect(function()
     TweenService:Create(Button,TweenInfo.new(0.15),{
