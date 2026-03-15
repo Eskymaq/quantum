@@ -27,22 +27,19 @@ local function VerifyKey(key)
     return false
 end
 
--- GUI
 local ScreenGui = Instance.new("ScreenGui", gethui())
 
 local Frame = Instance.new("Frame", ScreenGui)
-Frame.Size = UDim2.new(0, 450, 0, 300)
-Frame.Position = UDim2.new(0.5,-225,0.5,-150)
+Frame.Size = UDim2.new(0, 460, 0, 340)
+Frame.Position = UDim2.new(0.5,-230,0.5,-170)
 Frame.BackgroundColor3 = Color3.fromRGB(24,24,24)
 Frame.BorderSizePixel = 0
-
 Instance.new("UICorner", Frame)
 
 local Stroke = Instance.new("UIStroke", Frame)
 Stroke.Color = Color3.fromRGB(70,70,70)
 Stroke.Thickness = 2
 
--- TOP BAR
 local TopBar = Instance.new("Frame", Frame)
 TopBar.Size = UDim2.new(1,0,0,40)
 TopBar.BackgroundColor3 = Color3.fromRGB(30,30,30)
@@ -57,32 +54,40 @@ Title.TextSize = 18
 Title.TextColor3 = Color3.new(1,1,1)
 Title.BackgroundTransparency = 1
 
--- INFO TEXT
-local Info = Instance.new("TextLabel", Frame)
-Info.Size = UDim2.new(0.9,0,0,30)
-Info.Position = UDim2.new(0.05,0,0.2,0)
-Info.Text = "Enter your key to execute the script."
-Info.TextColor3 = Color3.fromRGB(200,200,200)
-Info.Font = Enum.Font.Gotham
-Info.TextSize = 14
-Info.BackgroundTransparency = 1
+local InfoPanel = Instance.new("TextLabel", Frame)
+InfoPanel.Size = UDim2.new(0.9,0,0,60)
+InfoPanel.Position = UDim2.new(0.05,0,0.16,0)
+InfoPanel.BackgroundTransparency = 1
+InfoPanel.TextWrapped = true
+InfoPanel.Font = Enum.Font.Gotham
+InfoPanel.TextSize = 13
+InfoPanel.TextColor3 = Color3.fromRGB(210,210,210)
+InfoPanel.Text = "Quantum Loader allows you to run the Quantum script safely.\nEnter your key below and press Execute."
 
--- WARNING SECTION
-local Warning = Instance.new("TextLabel", Frame)
-Warning.Size = UDim2.new(0.9,0,0,60)
-Warning.Position = UDim2.new(0.05,0,0.32,0)
-Warning.TextWrapped = true
-Warning.Text = "WARNING:\nKeys are HWID locked.\nSharing your key may result in the key being disabled or blacklisted."
-Warning.TextColor3 = Color3.fromRGB(255,170,0)
-Warning.Font = Enum.Font.Gotham
-Warning.TextSize = 13
-Warning.BackgroundTransparency = 1
+local Rules = Instance.new("TextLabel", Frame)
+Rules.Size = UDim2.new(0.9,0,0,50)
+Rules.Position = UDim2.new(0.05,0,0.33,0)
+Rules.BackgroundTransparency = 1
+Rules.TextWrapped = true
+Rules.Font = Enum.Font.Gotham
+Rules.TextSize = 12
+Rules.TextColor3 = Color3.fromRGB(255,170,0)
+Rules.Text = "Security Notice:\n• Keys are HWID locked\n• Do NOT share your key\n• Key sharing may lead to blacklist"
 
--- KEY BOX
+local LoaderInfo = Instance.new("TextLabel", Frame)
+LoaderInfo.Size = UDim2.new(0.9,0,0,35)
+LoaderInfo.Position = UDim2.new(0.05,0,0.46,0)
+LoaderInfo.BackgroundTransparency = 1
+LoaderInfo.TextWrapped = true
+LoaderInfo.Font = Enum.Font.Gotham
+LoaderInfo.TextSize = 12
+LoaderInfo.TextColor3 = Color3.fromRGB(180,180,180)
+LoaderInfo.Text = "Loader Info:\n• Script loads remotely from GitHub\n• Updates are automatic"
+
 local KeyBox = Instance.new("TextBox", Frame)
 KeyBox.Size = UDim2.new(0.85,0,0,45)
-KeyBox.Position = UDim2.new(0.075,0,0.58,0)
-KeyBox.PlaceholderText = "Enter key..."
+KeyBox.Position = UDim2.new(0.075,0,0.60,0)
+KeyBox.PlaceholderText = "Enter your key..."
 KeyBox.Text = ""
 KeyBox.Font = Enum.Font.Gotham
 KeyBox.TextSize = 16
@@ -91,11 +96,10 @@ KeyBox.BackgroundColor3 = Color3.fromRGB(35,35,35)
 KeyBox.BorderSizePixel = 0
 Instance.new("UICorner", KeyBox)
 
--- EXECUTE BUTTON
 local Button = Instance.new("TextButton", Frame)
 Button.Size = UDim2.new(0.85,0,0,45)
-Button.Position = UDim2.new(0.075,0,0.76,0)
-Button.Text = "EXECUTE SCRIPT"
+Button.Position = UDim2.new(0.075,0,0.75,0)
+Button.Text = "EXECUTE"
 Button.Font = Enum.Font.GothamBold
 Button.TextSize = 16
 Button.TextColor3 = Color3.new(1,1,1)
@@ -103,27 +107,24 @@ Button.BackgroundColor3 = Color3.fromRGB(46,204,113)
 Button.BorderSizePixel = 0
 Instance.new("UICorner", Button)
 
--- STATUS
 local Status = Instance.new("TextLabel", Frame)
 Status.Size = UDim2.new(1,0,0,20)
-Status.Position = UDim2.new(0,0,0.9,0)
+Status.Position = UDim2.new(0,0,0.90,0)
 Status.Text = "Status: Waiting for key"
 Status.TextColor3 = Color3.fromRGB(170,170,170)
 Status.Font = Enum.Font.Gotham
 Status.TextSize = 12
 Status.BackgroundTransparency = 1
 
--- FOOTER
-local Footer = Instance.new("TextLabel", Frame)
-Footer.Size = UDim2.new(1,0,0,15)
-Footer.Position = UDim2.new(0,0,0.95,0)
-Footer.Text = "Quantum Loader v1.0 | Keys are HWID locked"
-Footer.TextColor3 = Color3.fromRGB(120,120,120)
-Footer.Font = Enum.Font.Gotham
-Footer.TextSize = 11
-Footer.BackgroundTransparency = 1
+local Support = Instance.new("TextLabel", Frame)
+Support.Size = UDim2.new(1,0,0,15)
+Support.Position = UDim2.new(0,0,0.95,0)
+Support.Text = "Quantum Loader v1.0 | Keys are HWID locked"
+Support.TextColor3 = Color3.fromRGB(120,120,120)
+Support.Font = Enum.Font.Gotham
+Support.TextSize = 11
+Support.BackgroundTransparency = 1
 
--- BUTTON HOVER
 Button.MouseEnter:Connect(function()
     TweenService:Create(Button,TweenInfo.new(0.15),{
         BackgroundColor3 = Color3.fromRGB(60,220,130)
@@ -136,7 +137,6 @@ Button.MouseLeave:Connect(function()
     }):Play()
 end)
 
--- EXECUTION
 Button.MouseButton1Click:Connect(function()
 
     Status.Text = "Status: Checking key..."
@@ -145,9 +145,9 @@ Button.MouseButton1Click:Connect(function()
 
     if VerifyKey(key) then
 
-        Status.Text = "Status: Key accepted, loading..."
+        Status.Text = "Status: Key accepted. Loading..."
 
-        task.wait(0.6)
+        task.wait(0.5)
 
         ScreenGui:Destroy()
 
@@ -170,7 +170,6 @@ Button.MouseButton1Click:Connect(function()
 
 end)
 
--- DRAGGABLE WINDOW
 local dragging
 local dragInput
 local dragStart
