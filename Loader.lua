@@ -132,22 +132,6 @@ Button.BackgroundColor3 = Color3.fromRGB(46,204,113)
 Button.BorderSizePixel = 0
 Instance.new("UICorner", Button)
 
-local GetKey = Instance.new("TextButton", CenterPanel)
-GetKey.Size = UDim2.new(1,-20,0,35)
-GetKey.Position = UDim2.new(0,10,0,190)
-GetKey.Text = "GET KEY"
-GetKey.Font = Enum.Font.GothamBold
-GetKey.TextSize = 14
-GetKey.TextColor3 = Color3.new(1,1,1)
-GetKey.BackgroundColor3 = Color3.fromRGB(52,152,219)
-GetKey.BorderSizePixel = 0
-Instance.new("UICorner", GetKey)
-
-GetKey.MouseButton1Click:Connect(function()
-    setclipboard("https://your-key-link.com")
-    Status.Text = "Key link copied to clipboard"
-end)
-
 local Status = Instance.new("TextLabel", CenterPanel)
 Status.Size = UDim2.new(1,-20,0,20)
 Status.Position = UDim2.new(0,10,0,200)
@@ -189,7 +173,6 @@ Security.BackgroundTransparency = 1
 Security.Font = Enum.Font.Gotham
 Security.TextSize = 13
 Security.TextColor3 = Color3.fromRGB(255,170,0)
-Security.Text =
 Security.Text =
 "Security Notice\n\n"..
 "Each key is locked to your device (HWID).\n\n"..
