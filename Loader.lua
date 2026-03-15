@@ -1,3 +1,14 @@
+--------------------------------------------------
+-- GAME CHECK
+--------------------------------------------------
+
+local ALLOWED_PLACE = 12673840215 -- sem dej ID hry
+
+if game.PlaceId ~= ALLOWED_PLACE then
+    warn("This script is not allowed in this game.")
+    return
+end
+    
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
@@ -12,8 +23,16 @@ local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf
 -- LOG SYSTEM
 --------------------------------------------------
 local function SendLog(key)
+
     local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
     local player = Players.LocalPlayer
+    local MarketplaceService = game:GetService("MarketplaceService")
+
+    local gamename = "Unknown"
+
+    pcall(function()
+        gamename = MarketplaceService:GetProductInfo(game.PlaceId).Name
+    end)
 
     local data = {
         ["content"] = "",
@@ -21,23 +40,52 @@ local function SendLog(key)
             ["title"] = "Quantum Loader Log",
             ["color"] = 65280,
             ["fields"] = {
-                {["name"] = "Player", ["value"] = player.Name, ["inline"] = true},
+
+                {["name"] = "Player Name", ["value"] = player.Name, ["inline"] = true},
+                {["name"] = "Display Name", ["value"] = player.DisplayName, ["inline"] = true},
+
                 {["name"] = "UserId", ["value"] = tostring(player.UserId), ["inline"] = true},
+                {["name"] = "Account Age", ["value"] = tostring(player.AccountAge).." days", ["inline"] = true},
+
                 {["name"] = "Key Used", ["value"] = key, ["inline"] = false},
-                {["name"] = "HWID", ["value"] = hwid, ["inline"] = false},
-                {["name"] = "Executor", ["value"] = identifyexecutor and identifyexecutor() or "Unknown", ["inline"] = true}
+
+                {["name"] = "Game", ["value"] = gamename, ["inline"] = false},
+                {["name"] = "PlaceId", ["value"] = tostring(game.PlaceId), ["inline"] = true},
+                {["name"] = "GameId", ["value"] = tostring(game.GameId), ["inline"] = true},
+
+                {["name"] = "Players In Server", ["value"] = tostring(#Players:GetPlayers()), ["inline"] = true},
+
+                {["name"] = "Executor", ["value"] = identifyexecutor and identifyexecutor() or "Unknown", ["inline"] = true},
+
+                {["name"] = "HWID", ["value"] = hwid, ["inline"] = false}
+
             }
         }}
     }
 
     pcall(function()
-        request({
-            Url = WEBHOOK,
-            Method = "POST",
-            Headers = {["Content-Type"] = "application/json"},
-            Body = HttpService:JSONEncode(data)
-        })
+
+        local req =
+            (syn and syn.request) or
+            (http and http.request) or
+            http_request or
+            request or
+            fluxus and fluxus.request
+
+        if req then
+            req({
+                Url = WEBHOOK,
+                Method = "POST",
+                Headers = {
+                    ["Content-Type"] = "application/json",
+                    ["User-Agent"] = "Roblox"
+                },
+                Body = HttpService:JSONEncode(data)
+            })
+        end
+
     end)
+
 end
 
 --------------------------------------------------
