@@ -230,7 +230,7 @@ CreditsInfo.Text =
 "Support: Discord"
 
 local BottomPadding = Instance.new("Frame", Scroll)
-BottomPadding.Size = UDim2.new(1,0,0,80)
+BottomPadding.Size = UDim2.new(1,0,0,200)
 BottomPadding.BackgroundTransparency = 1
 
 --------------------------------------------------
