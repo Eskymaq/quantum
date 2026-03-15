@@ -6,7 +6,7 @@ local UIS = game:GetService("UserInputService")
 local KEY_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/keys.json"
 local MAIN_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/main.lua"
 
-local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf-ecZo70yXTk04Ohed9JO7EF4YmnwPzhdS8UOAzKda7A_bkZ34C-GSHdKMf"
+local WEBHOOK = "YOUR_WEBHOOK"
 
 --------------------------------------------------
 -- LOG SYSTEM
@@ -123,24 +123,6 @@ Status.TextSize = 12
 Status.BackgroundTransparency = 1
 
 --------------------------------------------------
--- LOADING SCREEN
---------------------------------------------------
-
-local LoadingFrame = Instance.new("Frame",ScreenGui)
-LoadingFrame.Size = UDim2.new(1,0,1,0)
-LoadingFrame.BackgroundColor3 = Color3.fromRGB(20,20,20)
-LoadingFrame.Visible = false
-
-local LoadingText = Instance.new("TextLabel",LoadingFrame)
-LoadingText.Size = UDim2.new(1,0,0,40)
-LoadingText.Position = UDim2.new(0,0,0.5,-20)
-LoadingText.Text = "Downloading script..."
-LoadingText.Font = Enum.Font.GothamBold
-LoadingText.TextSize = 22
-LoadingText.TextColor3 = Color3.new(1,1,1)
-LoadingText.BackgroundTransparency = 1
-
---------------------------------------------------
 -- EXECUTE
 --------------------------------------------------
 
@@ -157,19 +139,21 @@ Execute.MouseButton1Click:Connect(function()
 
     SendLog(key)
 
-    Status.Text = "Downloading script..."
+    Status.Text = "Key accepted"
 
-    Frame.Visible = false
-    LoadingFrame.Visible = true
+    task.wait(0.4)
 
-    task.wait(0.5)
+    Status.Text = "Loading script..."
 
-    local script = game:HttpGet(MAIN_URL)
+    local ok,err = pcall(function()
+        loadstring(game:HttpGet(MAIN_URL))()
+    end)
 
-    LoadingText.Text = "Launching..."
-
-    task.wait(0.5)
-
-    loadstring(script)()
+    if ok then
+        Status.Text = "Script loaded successfully"
+    else
+        Status.Text = "Failed to load script"
+        warn(err)
+    end
 
 end)
