@@ -145,7 +145,7 @@ LeftPanel.Position = UDim2.new(0,0,0,40)
 LeftPanel.BackgroundTransparency = 1
 
 local ScriptInfo = Instance.new("TextLabel", LeftPanel)
-ScriptInfo.Size = UDim2.new(1,-20,0,120)
+ScriptInfo.Size = UDim2.new(1,-20,0,180)
 ScriptInfo.Position = UDim2.new(0,10,0,10)
 ScriptInfo.TextWrapped = true
 ScriptInfo.BackgroundTransparency = 1
