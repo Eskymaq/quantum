@@ -6,7 +6,7 @@ local UIS = game:GetService("UserInputService")
 local KEY_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/keys.json"
 local MAIN_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/main.lua"
 
-local WEBHOOK = "PASTE_DISCORD_WEBHOOK_HERE"
+local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf-ecZo70yXTk04Ohed9JO7EF4YmnwPzhdS8UOAzKda7A_bkZ34C-GSHdKMf"
 
 --------------------------------------------------
 -- LOG SYSTEM
