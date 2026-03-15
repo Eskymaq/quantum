@@ -11,9 +11,7 @@ local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf
 --------------------------------------------------
 -- LOG SYSTEM
 --------------------------------------------------
-
 local function SendLog(key)
-
     local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
     local player = Players.LocalPlayer
 
@@ -33,22 +31,13 @@ local function SendLog(key)
     }
 
     pcall(function()
-
-        local req = request or http_request or syn and syn.request
-
-        if req then
-            req({
-                Url = WEBHOOK,
-                Method = "POST",
-                Headers = {
-                    ["Content-Type"] = "application/json"
-                },
-                Body = HttpService:JSONEncode(data)
-            })
-        end
-
+        request({
+            Url = WEBHOOK,
+            Method = "POST",
+            Headers = {["Content-Type"] = "application/json"},
+            Body = HttpService:JSONEncode(data)
+        })
     end)
-
 end
 
 --------------------------------------------------
