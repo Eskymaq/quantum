@@ -205,8 +205,9 @@ TipsInfo.TextColor3 = Color3.fromRGB(200,200,200)
 TipsInfo.TextWrapped = true
 TipsInfo.TextXAlignment = Enum.TextXAlignment.Left
 TipsInfo.TextYAlignment = Enum.TextYAlignment.Top
+TipsInfo.RichText = true
 TipsInfo.Text =
-"Quick Tips\n\n"..
+"<font color='#FFC832'><b>Quick Tips</b></font>\n\n"..
 "• Do not share your key\n"..
 "• Restart executor if script fails\n"..
 "• Use a trusted executor\n"..
