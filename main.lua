@@ -1,5 +1,5 @@
 -- ==========================================
--- ANTI DUMP / BASIC PROTECTION
+-- BASIC PROTECTION / ANTI DUMP
 -- ==========================================
 
 if not getgenv then
@@ -10,10 +10,21 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
+-- anti double execute
+if getgenv().QUANTUM_LOADED then
+    return
+end
+
+getgenv().QUANTUM_LOADED = true
+
+-- executor check
+if not hookfunction or not gethui then
+    return
+end
+
+-- anti simple dump
 pcall(function()
-    if hookfunction then
-        return
-    end
+    setreadonly(getgenv(), false)
 end)
 
 --!hood gang
