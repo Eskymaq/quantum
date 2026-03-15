@@ -411,3 +411,9 @@ UIS.InputChanged:Connect(function(input)
         update(input)
     end
 end)
+
+UIS.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = false
+    end
+end)
