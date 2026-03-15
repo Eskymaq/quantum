@@ -152,20 +152,17 @@ Scroll.BackgroundTransparency = 1
 Scroll.BorderSizePixel = 0
 Scroll.ScrollBarThickness = 6
 
--- Layout pro automatické řazení
-local Layout = Instance.new("UIListLayout", Scroll)
-Layout.Padding = UDim.new(0,10) -- mezera mezi sekcemi
-Layout.SortOrder = Enum.SortOrder.LayoutOrder
-
--- Script Info
+-- Script Info Label
 local ScriptInfo = Instance.new("TextLabel", Scroll)
+ScriptInfo.Size = UDim2.new(1,0,0,130)
+ScriptInfo.Position = UDim2.new(0,0,0,0)
 ScriptInfo.BackgroundTransparency = 1
 ScriptInfo.Font = Enum.Font.Gotham
 ScriptInfo.TextSize = 13
 ScriptInfo.TextColor3 = Color3.fromRGB(200,200,200)
 ScriptInfo.TextWrapped = true
 ScriptInfo.TextXAlignment = Enum.TextXAlignment.Left
-ScriptInfo.AutomaticSize = Enum.AutomaticSize.Y
+ScriptInfo.TextYAlignment = Enum.TextYAlignment.Top
 ScriptInfo.Text = 
 "Quantum Script\n\n"..
 "• Advanced automation\n"..
@@ -173,46 +170,54 @@ ScriptInfo.Text =
 "• Frequent updates\n\n"..
 "This loader downloads the latest version automatically."
 
--- Loader Info
+-- Version Info Label
 local VersionInfo = Instance.new("TextLabel", Scroll)
+VersionInfo.Size = UDim2.new(1,0,0,300)
+VersionInfo.Position = UDim2.new(0,0,0,140)
 VersionInfo.BackgroundTransparency = 1
 VersionInfo.Font = Enum.Font.Gotham
 VersionInfo.TextSize = 13
 VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
 VersionInfo.TextWrapped = true
 VersionInfo.TextXAlignment = Enum.TextXAlignment.Left
-VersionInfo.AutomaticSize = Enum.AutomaticSize.Y
-VersionInfo.Text =
+VersionInfo.TextYAlignment = Enum.TextYAlignment.Top
+VersionInfo.Text = 
 "Loader Info\n\n"..
 "Version: 1.0\n"..
 "Executor: Compatible\n\n"..
-"By using this key, you consent to sending account and HWID info for key management."
+"By using this key, you\n"..
+"consent to sending account\n"..
+"and HWID information\n"..
+"for key management\n"..
+"purposes."
 
--- Quick Tips
+-- Quick Tips Label
 local TipsInfo = Instance.new("TextLabel", Scroll)
+TipsInfo.Size = UDim2.new(1,0,0,120)
 TipsInfo.BackgroundTransparency = 1
 TipsInfo.Font = Enum.Font.Gotham
 TipsInfo.TextSize = 13
 TipsInfo.TextColor3 = Color3.fromRGB(200,200,200)
 TipsInfo.TextWrapped = true
 TipsInfo.TextXAlignment = Enum.TextXAlignment.Left
-TipsInfo.AutomaticSize = Enum.AutomaticSize.Y
+TipsInfo.TextYAlignment = Enum.TextYAlignment.Top
 TipsInfo.Text =
 "Quick Tips\n\n"..
 "• Do not share your key\n"..
 "• Restart executor if script fails\n"..
 "• Use a trusted executor\n"..
-"• Rejoin the game if loader fails"
+"• Rejoin the game if the loader fails"
 
--- Credits
+-- Credits Label
 local CreditsInfo = Instance.new("TextLabel", Scroll)
+CreditsInfo.Size = UDim2.new(1,0,0,100)
 CreditsInfo.BackgroundTransparency = 1
 CreditsInfo.Font = Enum.Font.Gotham
 CreditsInfo.TextSize = 13
 CreditsInfo.TextColor3 = Color3.fromRGB(170,170,170)
 CreditsInfo.TextWrapped = true
 CreditsInfo.TextXAlignment = Enum.TextXAlignment.Left
-CreditsInfo.AutomaticSize = Enum.AutomaticSize.Y
+CreditsInfo.TextYAlignment = Enum.TextYAlignment.Top
 CreditsInfo.Text =
 "Credits\n\n"..
 "Creator: Eskymaq\n"..
