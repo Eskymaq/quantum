@@ -183,24 +183,6 @@ VersionInfo.Text =
 "Executor: Compatible\n\n"..
 "By using this key, you consent to sending account and HWID information for key management purposes."
 
-local VersionInfo = Instance.new("TextLabel", LeftPanel)
-VersionInfo.Size = UDim2.new(1, -20, 0, 150) -- Zvětšil jsem výšku na 150, aby se tam text pohodlně vešel
-VersionInfo.Position = UDim2.new(0, 10, 0, 150)
-VersionInfo.BackgroundTransparency = 1
-VersionInfo.Font = Enum.Font.Gotham
-VersionInfo.TextSize = 12
-VersionInfo.TextColor3 = Color3.fromRGB(170, 170, 170)
-
--- Tady se děje to hlavní nastavení pro vzhled textu:
-VersionInfo.TextWrapped = true          -- Důležité pro zalamování dlouhých řádků
-VersionInfo.TextXAlignment = Enum.TextXAlignment.Left  -- Zarovná text k levému okraji
-VersionInfo.TextYAlignment = Enum.TextYAlignment.Top   -- Začne text psát odshora labelu
-
-VersionInfo.Text = "Loader Info\n\n"..
-"Version: 1.0\n"..
-"Executor: Compatible\n"..
-"By using this key, you consent to sending account and HWID information for key management purposes."
-
 --------------------------------------------------
 -- CENTER PANEL
 --------------------------------------------------
