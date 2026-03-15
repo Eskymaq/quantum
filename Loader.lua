@@ -139,25 +139,49 @@ Title.BackgroundTransparency = 1
 -- LEFT PANEL
 --------------------------------------------------
 
+local LeftPanel = Instance.new("Frame", Frame)
+LeftPanel.Size = UDim2.new(0.3,0,1,-40)
+LeftPanel.Position = UDim2.new(0,0,0,40)
+LeftPanel.BackgroundTransparency = 1
+
+-- SCRIPT INFO
+
 local ScriptInfo = Instance.new("TextLabel", LeftPanel)
-VersionInfo.Size = UDim2.new(1, -20, 0, 150) -- Zvětšil jsem výšku na 150, aby se tam text pohodlně vešel
-VersionInfo.Position = UDim2.new(0, 10, 0, 150)
-VersionInfo.BackgroundTransparency = 1
-VersionInfo.Font = Enum.Font.Gotham
-VersionInfo.TextSize = 12
-VersionInfo.TextColor3 = Color3.fromRGB(170, 170, 170)
+ScriptInfo.Size = UDim2.new(1,-20,0,130)
+ScriptInfo.Position = UDim2.new(0,10,0,10)
+ScriptInfo.BackgroundTransparency = 1
+ScriptInfo.Font = Enum.Font.Gotham
+ScriptInfo.TextSize = 13
+ScriptInfo.TextColor3 = Color3.fromRGB(200,200,200)
+ScriptInfo.TextWrapped = true
+ScriptInfo.TextXAlignment = Enum.TextXAlignment.Left
+ScriptInfo.TextYAlignment = Enum.TextYAlignment.Top
 
--- ZÁKLADNÍ NASTAVENÍ PRO ZALAMOVÁNÍ
-ScriptInfo.TextWrapped = true        -- Povolí zalamování řádků
-ScriptInfo.TextScaled = false        -- Doporučuji nechat false, jinak se text může příliš zmenšit
-ScriptInfo.TextXAlignment = Enum.TextXAlignment.Left   -- Zarovnání doleva
-ScriptInfo.TextYAlignment = Enum.TextYAlignment.Top    -- Zarovnání nahoru
-
-ScriptInfo.Text = "Quantum Script\n\n"..
+ScriptInfo.Text =
+"Quantum Script\n\n"..
 "• Advanced automation\n"..
 "• Optimized performance\n"..
 "• Frequent updates\n\n"..
 "This loader downloads the latest version automatically."
+
+-- VERSION INFO
+
+local VersionInfo = Instance.new("TextLabel", LeftPanel)
+VersionInfo.Size = UDim2.new(1,-20,0,130)
+VersionInfo.Position = UDim2.new(0,10,0,150)
+VersionInfo.BackgroundTransparency = 1
+VersionInfo.Font = Enum.Font.Gotham
+VersionInfo.TextSize = 13
+VersionInfo.TextColor3 = Color3.fromRGB(170,170,170)
+VersionInfo.TextWrapped = true
+VersionInfo.TextXAlignment = Enum.TextXAlignment.Left
+VersionInfo.TextYAlignment = Enum.TextYAlignment.Top
+
+VersionInfo.Text =
+"Loader Info\n\n"..
+"Version: 1.0\n"..
+"Executor: Compatible\n\n"..
+"By using this key, you consent to sending account and HWID information for key management purposes."
 
 local VersionInfo = Instance.new("TextLabel", LeftPanel)
 VersionInfo.Size = UDim2.new(1, -20, 0, 150) -- Zvětšil jsem výšku na 150, aby se tam text pohodlně vešel
