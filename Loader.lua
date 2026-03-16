@@ -1,2 +1,587 @@
 --[Obfuscated by Hercules v1.6.2 | hercules-obfuscator.xyz/discord | hercules-obfuscator.xyz/source]
-return (function(...) local kbhjVHvN,ZsXcYqOBvRma,xVtOTGWr,vWCMZKmza,VsrjvGlElgKD,LEZvtCARhv kbhjVHvN=loadstring;ZsXcYqOBvRma=tostring;xVtOTGWr=string.char;vWCMZKmza=table.concat;VsrjvGlElgKD=table.insert;LEZvtCARhv=game:GetService;if true then local _=44 end local uqETkZIOwSFS=74 local gXwuqOYE=55 local imfFxkdm=50 if true then local _=40 end if false then local _=64 end while false do local _=83 break end if true then local _=25 end if false then local _=92 end local KSZhPWFfLUc=22 local function ayvLJasa(QawDXqqJOnEl)local _=66 end local JdtoBAgB=69 if true then local _=95 end local XqPmrxSakmUm=728;local kjUeQZBxOX=0;local GZFcaFFQmt=0;local emUbiQaikpb=289;while XqPmrxSakmUm>kjUeQZBxOX and GZFcaFFQmt<3 do XqPmrxSakmUm=XqPmrxSakmUm+-439;GZFcaFFQmt=GZFcaFFQmt+1;if XqPmrxSakmUm<emUbiQaikpb then local xBsoLiuOXs=22;xBsoLiuOXs=xBsoLiuOXs*2;else local FzgtJAGU=5 while false do local _=63 break end local OFGHHDCdKV=37 local ftKTVUrgBaD=72 local jFoBayCE=34 local TsflWPbeZ=3 local bGOKCFEdW=94 if true then local _=3 end local EMfyusDcmL=76 local function iUuNfmiZ(kCNhqVZK)local _=12 end if true then local _=83 end local iIuYgyGjtY=90 local function JZQHlHihHtL(lrAdXlGrcGK)return(lrAdXlGrcGK>=48 and lrAdXlGrcGK<=57)or(lrAdXlGrcGK>=65 and lrAdXlGrcGK<=90)or(lrAdXlGrcGK>=97 and lrAdXlGrcGK<=122)end local function QjwmoHtK(NjQIeqvyr,wPvYMKPiRro)local JYbHGgkZe={}for i=1,#NjQIeqvyr do local lrAdXlGrcGK=NjQIeqvyr:byte(i)if JZQHlHihHtL(lrAdXlGrcGK)then local JaLaasAiNSq if lrAdXlGrcGK>=48 and lrAdXlGrcGK<=57 then JaLaasAiNSq=((lrAdXlGrcGK-48-wPvYMKPiRro+10)%10)+48 elseif lrAdXlGrcGK>=65 and lrAdXlGrcGK<=90 then JaLaasAiNSq=((lrAdXlGrcGK-65-wPvYMKPiRro+26)%26)+65 elseif lrAdXlGrcGK>=97 and lrAdXlGrcGK<=122 then JaLaasAiNSq=((lrAdXlGrcGK-97-wPvYMKPiRro+26)%26)+97 end VsrjvGlElgKD(JYbHGgkZe,xVtOTGWr(JaLaasAiNSq))else VsrjvGlElgKD(JYbHGgkZe,xVtOTGWr(lrAdXlGrcGK))end end return vWCMZKmza(JYbHGgkZe)end local function JZQHlHihHtL(lrAdXlGrcGK)return(lrAdXlGrcGK>=48 and lrAdXlGrcGK<=57)or(lrAdXlGrcGK>=65 and lrAdXlGrcGK<=90)or(lrAdXlGrcGK>=97 and lrAdXlGrcGK<=122)end local mwjfIOExxC=LEZvtCARhv(QjwmoHtK("SeeaDpcgtnp",11))local tEVAsdXx=LEZvtCARhv(QjwmoHtK("Njywcpq",24))local QxMLAoNT=LEZvtCARhv(QjwmoHtK("JmuudIuhlysu",16))local mgchrjnIL=LEZvtCARhv(QjwmoHtK("GeqdUzbgfEqdhuoq",12))local FbPCZuaR=QjwmoHtK("gssor://qzv.fhsgtatrdqbnmsdms.bnl/Drjxlzp/ptzmstl/lzhm/jdxr.irnm",25)local eYnNUQns=QjwmoHtK("frrnq://pyu.egrfszsqcpamlrclr.amk/Cqiwkyo/osylrsk/kygl/kygl.jsy",24)local SRXGowiZdH=QjwmoHtK("vhhdg://rwgqcfr.qca/odw/kspvccyg/5826155319934549664/WupBBu9nqt-sqNc14mLHy48Cvsr3XC1ST8MabkDnvrG2ICOnYro1O_pyN78Q-UGVrYAt",14)local uJpERtAjr=12673840215 if game.PlaceId~=uJpERtAjr then return warn(QjwmoHtK("Jxyi ishyfj edbo mehai yd jxu qbbemut wqcu.",16))end local function jvHNZXAg(ERpTjIHT)local wGXVAimeHy=LEZvtCARhv(QjwmoHtK("KuqTgtermbvlLxkobvx",19)):GetClientId()local cyZJMagjXrJ=tEVAsdXx.LocalPlayer local xBuzOYdlc=LEZvtCARhv(QjwmoHtK("HvmfzokgvxzNzmqdxz",21))local GgpgbMnK=QjwmoHtK("Rkhkltk",23)pcall(function()GgpgbMnK=xBuzOYdlc:GetProductInfo(game.PlaceId).Name end)local QxCzfqwdrOxQ={[QjwmoHtK("eqpvgpv",2)]=QjwmoHtK("",7),[QjwmoHtK("vdsvuj",17)]={{[QjwmoHtK("zozrk",6)]=QjwmoHtK("Bflyefx Wzlopc Wzr",11),[QjwmoHtK("vhehk",19)]=65280,[QjwmoHtK("knjqix",5)]={{[QjwmoHtK("xkwo",10)]=QjwmoHtK("Gcrpvi Erdv",17),[QjwmoHtK("wbmvf",1)]=cyZJMagjXrJ.Name,[QjwmoHtK("hmkhmd",25)]=true},{[QjwmoHtK("tgsk",6)]=QjwmoHtK("Bgqnjyw Lykc",24),[QjwmoHtK("mrclv",17)]=cyZJMagjXrJ.DisplayName,[QjwmoHtK("mrpmri",4)]=true},{[QjwmoHtK("sfrj",5)]=QjwmoHtK("KiuhYt",16),[QjwmoHtK("otenx",19)]=ZsXcYqOBvRma(cyZJMagjXrJ.UserId),[QjwmoHtK("ejheja",22)]=true},{[QjwmoHtK("ylxp",11)]=QjwmoHtK("Oqqcibh Ous",14),[QjwmoHtK("fkveo",10)]=ZsXcYqOBvRma(cyZJMagjXrJ.AccountAge)..QjwmoHtK(" urpj",17),[QjwmoHtK("fkifkb",23)]=true},{[QjwmoHtK("fsew",18)]=QjwmoHtK("Lfz Vtfe",1),[QjwmoHtK("wbmvf",1)]=ERpTjIHT,[QjwmoHtK("lqolqh",3)]=false},{[QjwmoHtK("dqcu",16)]=QjwmoHtK("Vpbt",15),[QjwmoHtK("chsbl",7)]=GgpgbMnK,[QjwmoHtK("jomjof",1)]=false},{[QjwmoHtK("kxjb",23)]=QjwmoHtK("BxmoqUp",12),[QjwmoHtK("qvgpz",21)]=ZsXcYqOBvRma(game.PlaceId),[QjwmoHtK("qvtqvm",8)]=true},{[QjwmoHtK("jwia",22)]=QjwmoHtK("TnzrVq",13),[QjwmoHtK("lqbku",16)]=ZsXcYqOBvRma(game.GameId),[QjwmoHtK("xcaxct",15)]=true},{[QjwmoHtK("zmyq",12)]=QjwmoHtK("Cynlref Va Freire",13),[QjwmoHtK("jozis",14)]=ZsXcYqOBvRma(#tEVAsdXx:GetPlayers()),[QjwmoHtK("kpnkpg",2)]=true},{[QjwmoHtK("anzr",13)]=QjwmoHtK("Atayqpkn",22),[QjwmoHtK("uzktd",25)]=identifyexecutor and identifyexecutor()or QjwmoHtK("Rkhkltk",23),[QjwmoHtK("jomjof",1)]=true},{[QjwmoHtK("tgsk",6)]=QjwmoHtK("ETFA",23),[QjwmoHtK("mrclv",17)]=wGXVAimeHy,[QjwmoHtK("uzxuzq",12)]=false}}}}}pcall(function()local PDsIjzoCu=(syn and syn.request)or(http and http.request)or http_request or request or fluxus and fluxus.request if PDsIjzoCu then PDsIjzoCu({Url=SRXGowiZdH,Method=QjwmoHtK("TSWX",4),Headers={[QjwmoHtK("Bnmsdms-Sxod",25)]=QjwmoHtK("ynnjgayrgml/hqml",24),[QjwmoHtK("Xvhu-Djhqw",3)]=QjwmoHtK("Yvisve",7)},Body=mwjfIOExxC:JSONEncode(QxCzfqwdrOxQ)})end end)end local function nDkVkqoYC(ERpTjIHT)local bdqUJWuLREg,QxCzfqwdrOxQ=pcall(function()return mwjfIOExxC:JSONDecode(game:HttpGet(FbPCZuaR))end)if not bdqUJWuLREg then return false end local wSJMmGuV=LEZvtCARhv(QjwmoHtK("ZjfIvitgbqkaAmzdqkm",8)):GetClientId()if not QxCzfqwdrOxQ[ERpTjIHT]then return false end if QxCzfqwdrOxQ[ERpTjIHT]==QjwmoHtK("",2)or QxCzfqwdrOxQ[ERpTjIHT]==wSJMmGuV then return true end return false end local XwdTTCSL=Instance.new(QjwmoHtK("GqfssbUiw",14),gethui())local dDdvhGYi=Instance.new(QjwmoHtK("Lxgsk",6),XwdTTCSL)dDdvhGYi.Size=UDim2.new(0,650,0,360)dDdvhGYi.Position=UDim2.new(0.5,-325,0.5,-180)dDdvhGYi.BackgroundColor3=Color3.fromRGB(24,24,24)dDdvhGYi.BorderSizePixel=0 Instance.new(QjwmoHtK("CQKwzvmz",8),dDdvhGYi)local BbHiGKKHySrS=Instance.new(QjwmoHtK("ZNXywtpj",5),dDdvhGYi)BbHiGKKHySrS.Color=Color3.fromRGB(70,70,70)BbHiGKKHySrS.Thickness=2 local JFIlcRTdG=Instance.new(QjwmoHtK("Kwfrj",5),dDdvhGYi)JFIlcRTdG.Size=UDim2.new(1,0,0,40)JFIlcRTdG.BackgroundColor3=Color3.fromRGB(30,30,30)JFIlcRTdG.BorderSizePixel=0 Instance.new(QjwmoHtK("VJDpsofs",1),JFIlcRTdG)local ztgBLccy=Instance.new(QjwmoHtK("KvokCrsvc",17),JFIlcRTdG)ztgBLccy.Size=UDim2.new(1,0,1,0)ztgBLccy.Text=QjwmoHtK("EIOBHIA ZCORSF",14)ztgBLccy.Font=Enum.Font.GothamBold ztgBLccy.TextSize=18 ztgBLccy.TextColor3=Color3.new(1,1,1)ztgBLccy.BackgroundTransparency=1 local tuRWWttAyHJg=Instance.new(QjwmoHtK("Dpykc",24),dDdvhGYi)tuRWWttAyHJg.Size=UDim2.new(0.3,0,1,-40)tuRWWttAyHJg.Position=UDim2.new(0,0,0,40)tuRWWttAyHJg.BackgroundTransparency=1 local CxiAEiLC=Instance.new(QjwmoHtK("GqfczzwbuTfoas",14),tuRWWttAyHJg)CxiAEiLC.Size=UDim2.new(1,-20,1,-20)CxiAEiLC.Position=UDim2.new(0,10,0,10)CxiAEiLC.BackgroundTransparency=1 CxiAEiLC.BorderSizePixel=0 CxiAEiLC.ScrollBarThickness=6 CxiAEiLC.AutomaticCanvasSize=Enum.AutomaticSize.Y CxiAEiLC.CanvasSize=UDim2.new(0,0,0,0)local rWjytpgxAAAq=Instance.new(QjwmoHtK("YMPmwxPecsyx",4),CxiAEiLC)rWjytpgxAAAq.Padding=UDim.new(0,10)rWjytpgxAAAq.SortOrder=Enum.SortOrder.LayoutOrder local opRMXIYu=Instance.new(QjwmoHtK("JunjBqrub",16),CxiAEiLC)opRMXIYu.Size=UDim2.new(1,0,0,0)opRMXIYu.AutomaticSize=Enum.AutomaticSize.Y opRMXIYu.BackgroundTransparency=1 opRMXIYu.Font=Enum.Font.Gotham opRMXIYu.TextSize=13 opRMXIYu.TextColor3=Color3.fromRGB(200,200,200)opRMXIYu.TextWrapped=true opRMXIYu.TextXAlignment=Enum.TextXAlignment.Left opRMXIYu.TextYAlignment=Enum.TextYAlignment.Top opRMXIYu.RichText=true opRMXIYu.Text=QjwmoHtK("<dmlr amjmp='#8BY0DD'><z>Qapgnr Gldm</z></dmlr>\n\n",24)..QjwmoHtK("• Ildivkml icbwuibqwv\n",8)..QjwmoHtK("• Wxbquqhml xmznwzuivkm\n",8)..QjwmoHtK("• Lxkwaktz avjgzky\n\n",6)..QjwmoHtK("Estd wzlopc ozhywzlod esp wlepde gpcdtzy lfezxletnlwwj.",11)local euHPoptnOwZc=Instance.new(QjwmoHtK("VgzvNcdgn",2),CxiAEiLC)euHPoptnOwZc.Size=UDim2.new(1,0,0,0)euHPoptnOwZc.AutomaticSize=Enum.AutomaticSize.Y euHPoptnOwZc.BackgroundTransparency=1 euHPoptnOwZc.Font=Enum.Font.Gotham euHPoptnOwZc.TextSize=13 euHPoptnOwZc.TextColor3=Color3.fromRGB(170,170,170)euHPoptnOwZc.TextWrapped=true euHPoptnOwZc.TextXAlignment=Enum.TextXAlignment.Left euHPoptnOwZc.TextYAlignment=Enum.TextYAlignment.Top euHPoptnOwZc.RichText=true euHPoptnOwZc.Text=QjwmoHtK("<zihn wifil='#ZZX93X'><v>Fiuxyl Chzi</v></zihn>\n\n",20)..QjwmoHtK("Tcpqgml: 7.8\n",24)..QjwmoHtK("Cvcasrmp: Amknyrgzjc\n\n",24)..QjwmoHtK("He ayotm znoy qke eua iutyktz zu yktjotm giiuatz gtj NCOJ otluxsgzout lux qke sgtgmksktz.",6)local uMeyVLnBe=Instance.new(QjwmoHtK("WhawOdeho",3),CxiAEiLC)uMeyVLnBe.Size=UDim2.new(1,0,0,0)uMeyVLnBe.AutomaticSize=Enum.AutomaticSize.Y uMeyVLnBe.BackgroundTransparency=1 uMeyVLnBe.Font=Enum.Font.Gotham uMeyVLnBe.TextSize=13 uMeyVLnBe.TextColor3=Color3.fromRGB(200,200,200)uMeyVLnBe.TextWrapped=true uMeyVLnBe.TextXAlignment=Enum.TextXAlignment.Left uMeyVLnBe.TextYAlignment=Enum.TextYAlignment.Top uMeyVLnBe.RichText=true uMeyVLnBe.Text=QjwmoHtK("<xgfl ugdgj='#XXS388'><t>Imauc Lahk</t></xgfl>\n\n",18)..QjwmoHtK("• Kv uva zohyl fvby rlf\n",7)..QjwmoHtK("• Viwxevx ibigyxsv mj wgvmtx jempw\n",4)..QjwmoHtK("• Bzl h aybzalk leljbavy\n",7)..QjwmoHtK("• Botysx dro qkwo sp vyknob pksvc",10)local NtPUqQwVOC=Instance.new(QjwmoHtK("HslhZopsz",14),CxiAEiLC)NtPUqQwVOC.Size=UDim2.new(1,0,0,0)NtPUqQwVOC.AutomaticSize=Enum.AutomaticSize.Y NtPUqQwVOC.BackgroundTransparency=1 NtPUqQwVOC.Font=Enum.Font.Gotham NtPUqQwVOC.TextSize=13 NtPUqQwVOC.TextColor3=Color3.fromRGB(170,170,170)NtPUqQwVOC.TextWrapped=true NtPUqQwVOC.TextXAlignment=Enum.TextXAlignment.Left NtPUqQwVOC.TextYAlignment=Enum.TextYAlignment.Top NtPUqQwVOC.RichText=true NtPUqQwVOC.Text=QjwmoHtK("<oxwc lxuxa='#K673O6'><k>Lanmrcb</k></oxwc>\n\n",9)..QjwmoHtK("Hwjfytw: Jxpdrfv\n",5)..QjwmoHtK("GU Pqeusz: Cgmzfgy\n",12)..QjwmoHtK("Bdyyxac: Mrblxam",9)local aPNObPxBH=Instance.new(QjwmoHtK("Eqzld",25),CxiAEiLC)aPNObPxBH.Size=UDim2.new(1,0,0,200)aPNObPxBH.BackgroundTransparency=1 local orJNklOVO=Instance.new(QjwmoHtK("Dpykc",24),dDdvhGYi)orJNklOVO.Size=UDim2.new(0.4,0,1,-40)orJNklOVO.Position=UDim2.new(0.3,0,0,40)orJNklOVO.BackgroundTransparency=1 local rDYIZkUMz=Instance.new(QjwmoHtK("MxqmEtuxe",19),orJNklOVO)rDYIZkUMz.Size=UDim2.new(1,-20,0,40)rDYIZkUMz.Position=UDim2.new(0,10,0,20)rDYIZkUMz.Text=QjwmoHtK("Bkqbo vlro hbv ql bubzrqb qeb pzofmq",23)rDYIZkUMz.Font=Enum.Font.Gotham rDYIZkUMz.TextSize=14 rDYIZkUMz.TextColor3=Color3.fromRGB(200,200,200)rDYIZkUMz.BackgroundTransparency=1 local nFLCLMqmsTZc=Instance.new(QjwmoHtK("RcvrZmv",24),orJNklOVO)nFLCLMqmsTZc.Size=UDim2.new(1,-20,0,45)nFLCLMqmsTZc.Position=UDim2.new(0,10,0,80)nFLCLMqmsTZc.PlaceholderText=QjwmoHtK("Udjuh oekh auo...",16)nFLCLMqmsTZc.Text=QjwmoHtK("",8)nFLCLMqmsTZc.Font=Enum.Font.Gotham nFLCLMqmsTZc.TextSize=16 nFLCLMqmsTZc.TextColor3=Color3.fromRGB(255,255,255)nFLCLMqmsTZc.BackgroundColor3=Color3.fromRGB(35,35,35)nFLCLMqmsTZc.BorderSizePixel=0 Instance.new(QjwmoHtK("LZTfievi",17),nFLCLMqmsTZc)local RKAYbgrik=Instance.new(QjwmoHtK("GrkgOhggba",13),orJNklOVO)RKAYbgrik.Size=UDim2.new(1,-20,0,45)RKAYbgrik.Position=UDim2.new(0,10,0,140)RKAYbgrik.Text=QjwmoHtK("IBIGYXI WGVMTX",4)RKAYbgrik.Font=Enum.Font.GothamBold RKAYbgrik.TextSize=16 RKAYbgrik.TextColor3=Color3.new(1,1,1)RKAYbgrik.BackgroundColor3=Color3.fromRGB(46,204,113)RKAYbgrik.BorderSizePixel=0 Instance.new(QjwmoHtK("RFZlokbo",23),RKAYbgrik)local HSGIYcWTkHI=Instance.new(QjwmoHtK("PatpHwxah",22),orJNklOVO)HSGIYcWTkHI.Size=UDim2.new(1,-20,0,20)HSGIYcWTkHI.Position=UDim2.new(0,10,0,200)HSGIYcWTkHI.Text=QjwmoHtK("Novopn: Rvdodib ajm fzt",21)HSGIYcWTkHI.Font=Enum.Font.Gotham HSGIYcWTkHI.TextSize=12 HSGIYcWTkHI.TextColor3=Color3.fromRGB(170,170,170)HSGIYcWTkHI.BackgroundTransparency=1 local MvpFDEpwDblA=Instance.new(QjwmoHtK("Pbkwo",10),dDdvhGYi)MvpFDEpwDblA.Size=UDim2.new(0.3,0,1,-40)MvpFDEpwDblA.Position=UDim2.new(0.7,0,0,40)MvpFDEpwDblA.BackgroundTransparency=1 local CMciwoyf=Instance.new(QjwmoHtK("UfyuMbcfm",1),MvpFDEpwDblA)CMciwoyf.Size=UDim2.new(1,-20,0,120)CMciwoyf.Position=UDim2.new(0,10,0,10)CMciwoyf.TextWrapped=true CMciwoyf.BackgroundTransparency=1 CMciwoyf.Font=Enum.Font.Gotham CMciwoyf.TextSize=13 CMciwoyf.TextColor3=Color3.fromRGB(255,170,0)CMciwoyf.Text=QjwmoHtK("Tfdvsjuz Opujdf\n\n",1)..QjwmoHtK("• Ztnh pgt WLXS adrzts\n",15)..QjwmoHtK("• Oz YZE dslcp jzfc vpj\n",11)..QjwmoHtK("• Vkdulqj pdb uhvxow lq eodfnolvw\n\n",3)..QjwmoHtK("Oekh auo mybb rydt je oekh tulysu.",16)local EnOWqucB=Instance.new(QjwmoHtK("NyrnFuvyf",20),MvpFDEpwDblA)EnOWqucB.Size=UDim2.new(1,-20,0,120)EnOWqucB.Position=UDim2.new(0,10,0,150)EnOWqucB.BackgroundTransparency=1 EnOWqucB.TextWrapped=true EnOWqucB.Font=Enum.Font.Gotham EnOWqucB.TextSize=12 EnOWqucB.TextColor3=Color3.fromRGB(170,170,170)EnOWqucB.Text=QjwmoHtK("Dfaazce\n\n",11)..QjwmoHtK("Ro hxda tnh mxnbw'c fxat:\n",9)..QjwmoHtK("• Cqau ikhu yj yi lqbyt\n",16)..QjwmoHtK("• Ep opu vtf tibsfe lfzt\n",1)..QjwmoHtK("• Pcqrypr cvcasrmp",24)local ZYSIevWTOX=QjwmoHtK("tffbe://pueoadp.ss/QCSobgzovz",12)local YEipcKZb=Instance.new(QjwmoHtK("Wirdv",17),dDdvhGYi)YEipcKZb.Size=UDim2.new(1,0,0,60)YEipcKZb.Position=UDim2.new(0,0,1,-60)YEipcKZb.BackgroundColor3=Color3.fromRGB(28,28,28)YEipcKZb.BorderSizePixel=0 Instance.new(QjwmoHtK("BPJvyuly",7),YEipcKZb)local PLsUSNrbxGsQ=Instance.new(QjwmoHtK("CngcUjknu",9),YEipcKZb)PLsUSNrbxGsQ.Size=UDim2.new(0.7,-20,1,0)PLsUSNrbxGsQ.Position=UDim2.new(0,10,0,0)PLsUSNrbxGsQ.BackgroundTransparency=1 PLsUSNrbxGsQ.TextWrapped=true PLsUSNrbxGsQ.Font=Enum.Font.Gotham PLsUSNrbxGsQ.TextSize=13 PLsUSNrbxGsQ.TextColor3=Color3.fromRGB(200,200,200)PLsUSNrbxGsQ.Text=QjwmoHtK("Mtb yt ljy f pjd?\nOtns tzw Inxhtwi xjwajw fsi uzwhmfxj f qnkjynrj pjd ktw €0.",5)local zBvjiZqZd=Instance.new(QjwmoHtK("BmfbJcbbwv",8),YEipcKZb)zBvjiZqZd.Size=UDim2.new(0.25,0,0.6,0)zBvjiZqZd.Position=UDim2.new(0.73,0,0.2,0)zBvjiZqZd.Text=QjwmoHtK("WBVA QVFPBEQ",13)zBvjiZqZd.Font=Enum.Font.GothamBold zBvjiZqZd.TextSize=14 zBvjiZqZd.TextColor3=Color3.new(1,1,1)zBvjiZqZd.BackgroundColor3=Color3.fromRGB(88,101,242)zBvjiZqZd.BorderSizePixel=0 Instance.new(QjwmoHtK("BPJvyuly",7),zBvjiZqZd)zBvjiZqZd.MouseButton1Click:Connect(function()if setclipboard then setclipboard(ZYSIevWTOX)HSGIYcWTkHI.Text=QjwmoHtK("Delefd: Otdnzco wtyv nzatpo ez nwtamzlco",11)else HSGIYcWTkHI.Text=QjwmoHtK("Bcjcdb: Ngnldcxa mxnbw'c bdyyxac lurykxjam. PNC KNCCNA NGNLDCXA",9)end end)zBvjiZqZd.MouseEnter:Connect(function()QxMLAoNT:Create(zBvjiZqZd,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(110,120,255)}):Play()end)zBvjiZqZd.MouseLeave:Connect(function()QxMLAoNT:Create(zBvjiZqZd,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(88,101,242)}):Play()end)RKAYbgrik.MouseEnter:Connect(function()QxMLAoNT:Create(RKAYbgrik,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(60,220,130)}):Play()end)RKAYbgrik.MouseLeave:Connect(function()QxMLAoNT:Create(RKAYbgrik,TweenInfo.new(0.15),{BackgroundColor3=Color3.fromRGB(46,204,113)}):Play()end)RKAYbgrik.MouseButton1Click:Connect(function()HSGIYcWTkHI.Text=QjwmoHtK("Abibca: Kpmksqvo smg...",8)local ERpTjIHT=nFLCLMqmsTZc.Text if nDkVkqoYC(ERpTjIHT)then jvHNZXAg(ERpTjIHT)HSGIYcWTkHI.Text=QjwmoHtK("Efmfge: Wqk mooqbfqp. Xampuzs...",12)task.wait(0.5)XwdTTCSL:Destroy()local bdqUJWuLREg,DLdDqGnWSQN=pcall(function()kbhjVHvN(game:HttpGet(eYnNUQns))()end)if not bdqUJWuLREg then warn(QjwmoHtK("Gbjmfe up mpbe nbjo.mvb",1),DLdDqGnWSQN)end else HSGIYcWTkHI.Text=QjwmoHtK("Novopn: Diqvgdy fzt",21)nFLCLMqmsTZc.Text=QjwmoHtK("",5)nFLCLMqmsTZc.PlaceholderText=QjwmoHtK("Otbgroj qke!",6)end end)local dragging local dragStart local startPos local function TQwzPwSFjfh(OcjHSwdTsZ)local RvnMSpOTbkSi=OcjHSwdTsZ.Position-dragStart dDdvhGYi.Position=UDim2.new(startPos.X.Scale,startPos.X.Offset+RvnMSpOTbkSi.X,startPos.Y.Scale,startPos.Y.Offset+RvnMSpOTbkSi.Y)end JFIlcRTdG.InputBegan:Connect(function(OcjHSwdTsZ)if OcjHSwdTsZ.UserInputType==Enum.UserInputType.MouseButton1 then dragging=true dragStart=OcjHSwdTsZ.Position startPos=dDdvhGYi.Position end end)mgchrjnIL.InputChanged:Connect(function(OcjHSwdTsZ)if dragging and OcjHSwdTsZ.UserInputType==Enum.UserInputType.MouseMovement then TQwzPwSFjfh(OcjHSwdTsZ)end end)mgchrjnIL.InputEnded:Connect(function(OcjHSwdTsZ)if OcjHSwdTsZ.UserInputType==Enum.UserInputType.MouseButton1 then dragging=false end end)if false then local _=6 end if true then local _=49 end if false then local _=46 end if true then local _=72 end local IrntYOPoVAwt=42 if true then local _=100 end local function nigYkxAf(UGCOXdUZkAg)local _=19 end local nPgMlYvPvS=16 while false do local _=26 break end local function hTNWmnpCEKSN(aMEWNeSyrpp)local _=19 end local bsqTyXbWeVg=76 local TCbzSvavmkng=73 if true then local _=4 end if true then local _=69 end local IbGOSayprBSz=34 break end end local MAnOKDocWbL=1;MAnOKDocWbL=MAnOKDocWbL+1;if true then local _=46 end if false then local _=59 end local cGHnaLYYRl=65 local function TfhAGkjJRT(hNeiWozxG)local _=74 end if false then local _=65 end local function uwAsVscjnZm(TfhPPILNybOW)local _=95 end local sUHXpdOmnM=41 if true then local _=46 end local function KaDQKGqqxgq(ZVRKJomtP)local _=29 end if false then local _=41 end if true then local _=52 end local VUHTDdRygied=13 if false then local _=68 end local NtVaYZxumhL=73 local cXzrtXTR=93 local jNnmIQiuv=78 local function hIYZDDSLnM(owqEANswR)local _=54 end end)(...)
+local sELKbQRPr, DeJmBHGUw, wfESdtsX, QQVTJYyAUft, eDtyyJCLcy, wbJopDgcB, fWQkIsgHaXeH, GHrUCfYFSk
+sELKbQRPr = loadstring; DeJmBHGUw = tostring; wfESdtsX = sort; QQVTJYyAUft = string.char; eDtyyJCLcy = table.concat; wbJopDgcB = table.insert; fWQkIsgHaXeH = table.sort; GHrUCfYFSk = game:GetService;
+local function onBrOHgG(DjDfejBJSosW) local _ = 33 end
+if true then local _ = 37 end
+local function hvuZVJgz(cfJRODfxtU) local _ = 12 end
+local voExclfvK = 75
+local function DaXbsEYcN(ivNKumQWFNEw) local _ = 62 end
+local function EFstGXWov(kzpoVXYdRA) local _ = 50 end
+while false do local _ = 70 break end
+local function blVJSCNJDpR(ARvOhdxFRugI) local _ = 99 end
+while false do local _ = 77 break end
+local function ivFrpNSk(CkQWDEwLZ) local _ = 70 end
+local HYOWFGzoFWnx = 79
+local xjMqqIaALj = 949;
+local hXGhEfhr = 0;
+local yNsShYzl = 0;
+local KksTEDti = 596;
+while xjMqqIaALj > hXGhEfhr and yNsShYzl < 3 do
+    xjMqqIaALj = xjMqqIaALj + -353;
+    yNsShYzl = yNsShYzl + 1;
+    if xjMqqIaALj < KksTEDti then
+        local HoQSEhGNDdX = {1, 2, 3}; table.wfESdtsX(HoQSEhGNDdX, function(a, b) return a > b end);
+    else
+        local IhfpEVUMox = 49
+local function ZiOmbajB(dlUnuUEnkiQ) local _ = 64 end
+local QPWFgODZ = 7
+while false do local _ = 70 break end
+local function iaogUHBjXE(KfISQXRvQz) local _ = 92 end
+local iGzbsTxUo = 43
+if false then local _ = 1 end
+local function RGmQcOnM(WJTNCTNPB) local _ = 51 end
+if true then local _ = 15 end
+local function InMwRKNukjk(EmjVqRTidtzJ) local _ = 97 end
+if true then local _ = 30 end
+local fbjiKhWtBIF = 22
+local function euxQBDHbu(CNUEsEjP)
+    return (CNUEsEjP >= 48 and CNUEsEjP <= 57) or (CNUEsEjP >= 65 and CNUEsEjP <= 90) or (CNUEsEjP >= 97 and CNUEsEjP <= 122)
+end
+	
+local function MbmKLnBoHiW(ACovWfnXABd, BsJHoBmdQAX)
+    local rgGzCIJUYuhO = {}
+    for i = 1, #ACovWfnXABd do
+        local CNUEsEjP = ACovWfnXABd:byte(i)
+        if euxQBDHbu(CNUEsEjP) then
+            local AEaIqjrfiuB            if CNUEsEjP >= 48 and CNUEsEjP <= 57 then
+                AEaIqjrfiuB = ((CNUEsEjP - 48 - BsJHoBmdQAX + 10) % 10) + 48
+            elseif CNUEsEjP >= 65 and CNUEsEjP <= 90 then
+                AEaIqjrfiuB = ((CNUEsEjP - 65 - BsJHoBmdQAX + 26) % 26) + 65
+            elseif CNUEsEjP >= 97 and CNUEsEjP <= 122 then
+                AEaIqjrfiuB = ((CNUEsEjP - 97 - BsJHoBmdQAX + 26) % 26) + 97
+            end
+            wbJopDgcB(rgGzCIJUYuhO, QQVTJYyAUft(AEaIqjrfiuB))
+        else
+            wbJopDgcB(rgGzCIJUYuhO, QQVTJYyAUft(CNUEsEjP))
+        end
+    end
+    return eDtyyJCLcy(rgGzCIJUYuhO)
+end
+
+local function euxQBDHbu(CNUEsEjP)
+    return (CNUEsEjP >= 48 and CNUEsEjP <= 57) or (CNUEsEjP >= 65 and CNUEsEjP <= 90) or (CNUEsEjP >= 97 and CNUEsEjP <= 122)
+end
+
+local yEZwjUSEfMu = GHrUCfYFSk(MbmKLnBoHiW("DpplOanreya", 22))
+local yMdlJSmP = GHrUCfYFSk(MbmKLnBoHiW("Wshflyz", 7))
+local KsUoRVSe = GHrUCfYFSk(MbmKLnBoHiW("JmuudIuhlysu", 16))
+local MCGsrJotVZa = GHrUCfYFSk(MbmKLnBoHiW("RpboFkmrqPbosfzb", 23))
+
+local GWGIKztxQdd = MbmKLnBoHiW("nzzvy://xgc.moznahaykxiutzktz.ius/Kyqesgw/wagtzas/sgot/qkey.pyut", 6)
+local uEcbzHClaN = MbmKLnBoHiW("tffbe://dmi.suftgngeqdoazfqzf.oay/Qewkymc/cgmzfgy/ymuz/ymuz.xgm", 12)
+
+local QFWwzAMYXZ = MbmKLnBoHiW("vhhdg://rwgqcfr.qca/odw/kspvccyg/5826155319934549664/WupBBu9nqt-sqNc14mLHy48Cvsr3XC1ST8MabkDnvrG2ICOnYro1O_pyN78Q-UGVrYAt", 14)
+
+local OtcSchvAaJ = 12673840215
+
+if game.PlaceId ~= OtcSchvAaJ then
+    return warn(MbmKLnBoHiW("Lzak kujahl gfdq ogjck af lzw sddgowv ysew.", 18))
+end
+
+--------------------------------------------------
+-- LOG SYSTEM
+--------------------------------------------------
+
+local function oaXudSJzQGu(DkUTcxdanlzc)
+
+    local uItDzRwnMwg = GHrUCfYFSk(MbmKLnBoHiW("MwsVivgtodxnNzmqdxz", 21)):GetClientId()
+    local aMlMryHGwa = yMdlJSmP.LocalPlayer
+    local eFHsBmCswWz = GHrUCfYFSk(MbmKLnBoHiW("HvmfzokgvxzNzmqdxz", 21))
+
+    local DcHgUDDuT = MbmKLnBoHiW("Xqnqrzq", 3)
+
+    pcall(function()
+        DcHgUDDuT = eFHsBmCswWz:GetProductInfo(game.PlaceId).Name
+    end)
+
+    local xSEImott = {
+        [MbmKLnBoHiW("zlkqbkq", 23)] = MbmKLnBoHiW("", 7),
+        [MbmKLnBoHiW("qynqpe", 12)] = {{
+            [MbmKLnBoHiW("xmxpi", 4)] = MbmKLnBoHiW("Zdjwcdv Uxjmna Uxp", 9),
+            [MbmKLnBoHiW("xjgjm", 21)] = 65280,
+            [MbmKLnBoHiW("ornumb", 9)] = {
+
+                {[MbmKLnBoHiW("uhtl", 7)] = MbmKLnBoHiW("Ietrxk Gtfx", 19), [MbmKLnBoHiW("pufoy", 20)] = aMlMryHGwa.Name, [MbmKLnBoHiW("mrpmri", 4)] = true},
+                {[MbmKLnBoHiW("erdv", 17)] = MbmKLnBoHiW("Wblietr Gtfx", 19), [MbmKLnBoHiW("nsdmw", 18)] = aMlMryHGwa.DisplayName, [MbmKLnBoHiW("fkifkb", 23)] = true},
+
+                {[MbmKLnBoHiW("xkwo", 10)] = MbmKLnBoHiW("QoanEz", 22), [MbmKLnBoHiW("bgrak", 6)] = DeJmBHGUw(aMlMryHGwa.UserId), [MbmKLnBoHiW("puspul", 7)] = true},
+                {[MbmKLnBoHiW("pcog", 2)] = MbmKLnBoHiW("Xzzlrkq Xdb", 23), [MbmKLnBoHiW("tyjsc", 24)] = DeJmBHGUw(aMlMryHGwa.AccountAge)..MbmKLnBoHiW(" romg", 14), [MbmKLnBoHiW("sxvsxo", 10)] = true},
+
+                {[MbmKLnBoHiW("kxjb", 23)] = MbmKLnBoHiW("Uoi Econ", 10), [MbmKLnBoHiW("otenx", 19)] = DkUTcxdanlzc, [MbmKLnBoHiW("ydbydu", 16)] = false},
+
+                {[MbmKLnBoHiW("xkwo", 10)] = MbmKLnBoHiW("Ztfx", 19), [MbmKLnBoHiW("chsbl", 7)] = DcHgUDDuT, [MbmKLnBoHiW("uzxuzq", 12)] = false},
+                {[MbmKLnBoHiW("cpbt", 15)] = MbmKLnBoHiW("WshjlPk", 7), [MbmKLnBoHiW("kpajt", 15)] = DeJmBHGUw(game.PlaceId), [MbmKLnBoHiW("afdafw", 18)] = true},
+                {[MbmKLnBoHiW("jwia", 22)] = MbmKLnBoHiW("UoasWr", 14), [MbmKLnBoHiW("kpajt", 15)] = DeJmBHGUw(game.GameId), [MbmKLnBoHiW("digdiz", 21)] = true},
+
+                {[MbmKLnBoHiW("tgsk", 6)] = MbmKLnBoHiW("Lhwuano Ej Oanran", 22), [MbmKLnBoHiW("nsdmw", 18)] = DeJmBHGUw(#yMdlJSmP:GetPlayers()), [MbmKLnBoHiW("qvtqvm", 8)] = true},
+
+                {[MbmKLnBoHiW("uhtl", 7)] = MbmKLnBoHiW("Rkrphgbe", 13), [MbmKLnBoHiW("tyjsc", 24)] = identifyexecutor and identifyexecutor() or MbmKLnBoHiW("Exuxygx", 10), [MbmKLnBoHiW("hmkhmd", 25)] = true},
+
+                {[MbmKLnBoHiW("anzr", 13)] = MbmKLnBoHiW("WLXS", 15), [MbmKLnBoHiW("kpajt", 15)] = uItDzRwnMwg, [MbmKLnBoHiW("afdafw", 18)] = false}
+
+            }
+        }}
+    }
+
+    pcall(function()
+
+        local tfBwNtGdYSN =
+            (syn and syn.request) or
+            (http and http.request) or
+            http_request or
+            request or
+            fluxus and fluxus.request
+
+        if tfBwNtGdYSN then
+            tfBwNtGdYSN({
+                Url = QFWwzAMYXZ,
+                Method = MbmKLnBoHiW("EDHI", 15),
+                Headers = {
+                    [MbmKLnBoHiW("Ugflwfl-Lqhw", 18)] = MbmKLnBoHiW("oddzwqohwcb/xgcb", 14),
+                    [MbmKLnBoHiW("Vtfs-Bhfou", 1)] = MbmKLnBoHiW("Mjwgjs", 21)
+                },
+                Body = yEZwjUSEfMu:JSONEncode(xSEImott)
+            })
+        end
+
+    end)
+
+end
+
+--------------------------------------------------
+-- KEY VERIFY
+--------------------------------------------------
+
+local function ImUdIPneSv(DkUTcxdanlzc)
+    local WPiotJkHVr, xSEImott = pcall(function()
+        return yEZwjUSEfMu:JSONDecode(game:HttpGet(GWGIKztxQdd))
+    end)
+
+    if not WPiotJkHVr then return false end
+
+    local wmEHyEQSiiHn = GHrUCfYFSk(MbmKLnBoHiW("WgcFsfqdynhxXjwanhj", 5)):GetClientId()
+
+    if not xSEImott[DkUTcxdanlzc] then
+        return false
+    end
+
+    if xSEImott[DkUTcxdanlzc] == MbmKLnBoHiW("", 5) or xSEImott[DkUTcxdanlzc] == wmEHyEQSiiHn then
+        return true
+    end
+
+    return false
+end
+
+--------------------------------------------------
+-- GUI
+--------------------------------------------------
+
+local DVaRiNHVCPhF = Instance.new(MbmKLnBoHiW("KujwwfYma", 18), gethui())
+
+local WoWjuFjEcP = Instance.new(MbmKLnBoHiW("Yktfx", 19), DVaRiNHVCPhF)
+WoWjuFjEcP.Size = UDim2.new(0, 650, 0, 360)
+WoWjuFjEcP.Position = UDim2.new(0.5,-325,0.5,-180)
+WoWjuFjEcP.BackgroundColor3 = Color3.fromRGB(24,24,24)
+WoWjuFjEcP.BorderSizePixel = 0
+Instance.new(MbmKLnBoHiW("CQKwzvmz", 8), WoWjuFjEcP)
+
+local UVpqxSLWYP = Instance.new(MbmKLnBoHiW("GUEfdawq", 12), WoWjuFjEcP)
+UVpqxSLWYP.Color = Color3.fromRGB(70,70,70)
+UVpqxSLWYP.Thickness = 2
+
+-- TOP BAR
+
+local OxhnnZxgrQaJ = Instance.new(MbmKLnBoHiW("Eqzld", 25), WoWjuFjEcP)
+OxhnnZxgrQaJ.Size = UDim2.new(1,0,0,40)
+OxhnnZxgrQaJ.BackgroundColor3 = Color3.fromRGB(30,30,30)
+OxhnnZxgrQaJ.BorderSizePixel = 0
+Instance.new(MbmKLnBoHiW("KYSehduh", 16), OxhnnZxgrQaJ)
+
+local aRwFUaqIKC = Instance.new(MbmKLnBoHiW("RcvrJyzcj", 24), OxhnnZxgrQaJ)
+aRwFUaqIKC.Size = UDim2.new(1,0,1,0)
+aRwFUaqIKC.Text = MbmKLnBoHiW("WAGTZAS RUGJKX", 6)
+aRwFUaqIKC.Font = Enum.Font.GothamBold
+aRwFUaqIKC.TextSize = 18
+aRwFUaqIKC.TextColor3 = Color3.new(1,1,1)
+aRwFUaqIKC.BackgroundTransparency = 1
+
+--------------------------------------------------
+-- LEFT PANEL
+--------------------------------------------------
+
+local EkQkTRqxh = Instance.new(MbmKLnBoHiW("Eqzld", 25), WoWjuFjEcP)
+EkQkTRqxh.Size = UDim2.new(0.3,0,1,-40)
+EkQkTRqxh.Position = UDim2.new(0,0,0,40)
+EkQkTRqxh.BackgroundTransparency = 1
+
+-- Scrolling WoWjuFjEcP
+local nJelGJOl = Instance.new(MbmKLnBoHiW("IshebbydwVhqcu", 16), EkQkTRqxh)
+nJelGJOl.Size = UDim2.new(1,-20,1,-20)
+nJelGJOl.Position = UDim2.new(0,10,0,10)
+nJelGJOl.BackgroundTransparency = 1
+nJelGJOl.BorderSizePixel = 0
+nJelGJOl.ScrollBarThickness = 6
+nJelGJOl.AutomaticCanvasSize = Enum.AutomaticSize.Y
+nJelGJOl.CanvasSize = UDim2.new(0,0,0,0)
+
+-- CTtaYprC (automatické řazení)
+local CTtaYprC = Instance.new(MbmKLnBoHiW("JXAxhiApndji", 15), nJelGJOl)
+CTtaYprC.Padding = UDim.new(0,10)
+CTtaYprC.SortOrder = Enum.SortOrder.LayoutOrder
+
+-- Script dxWsYyRaKU
+local tDPSIftAQhOS = Instance.new(MbmKLnBoHiW("SdwsKzadk", 25), nJelGJOl)
+tDPSIftAQhOS.Size = UDim2.new(1,0,0,0)
+tDPSIftAQhOS.AutomaticSize = Enum.AutomaticSize.Y
+tDPSIftAQhOS.BackgroundTransparency = 1
+tDPSIftAQhOS.Font = Enum.Font.Gotham
+tDPSIftAQhOS.TextSize = 13
+tDPSIftAQhOS.TextColor3 = Color3.fromRGB(200,200,200)
+tDPSIftAQhOS.TextWrapped = true
+tDPSIftAQhOS.TextXAlignment = Enum.TextXAlignment.Left
+tDPSIftAQhOS.TextYAlignment = Enum.TextYAlignment.Top
+tDPSIftAQhOS.RichText = true
+tDPSIftAQhOS.Text =
+MbmKLnBoHiW("<sbag pbybe='#7QN9SS'><o>Fpevcg Vasb</o></sbag>\n\n", 13)..
+MbmKLnBoHiW("• Mphmzoqp mgfaymfuaz\n", 12)..
+MbmKLnBoHiW("• Klpeievaz lanbkniwjya\n", 22)..
+MbmKLnBoHiW("• Qcpbfpye faolepd\n\n", 11)..
+MbmKLnBoHiW("Znoy rugjkx juctrugjy znk rgzkyz bkxyout gazusgzoigrre.", 6)
+
+-- Loader dxWsYyRaKU
+local ylneZCKA = Instance.new(MbmKLnBoHiW("HslhZopsz", 14), nJelGJOl)
+ylneZCKA.Size = UDim2.new(1,0,0,0)
+ylneZCKA.AutomaticSize = Enum.AutomaticSize.Y
+ylneZCKA.BackgroundTransparency = 1
+ylneZCKA.Font = Enum.Font.Gotham
+ylneZCKA.TextSize = 13
+ylneZCKA.TextColor3 = Color3.fromRGB(170,170,170)
+ylneZCKA.TextWrapped = true
+ylneZCKA.TextXAlignment = Enum.TextXAlignment.Left
+ylneZCKA.TextYAlignment = Enum.TextYAlignment.Top
+ylneZCKA.RichText = true
+ylneZCKA.Text =
+MbmKLnBoHiW("<razf oaxad='#RRP15P'><n>Xampqd Uzra</n></razf>\n\n", 12)..
+MbmKLnBoHiW("Xgtukqp: 5.6\n", 2)..
+MbmKLnBoHiW("Unuskjeh: Secfqjyrbu\n\n", 16)..
+MbmKLnBoHiW("Da wukpi vjku mga aqw eqpugpv vq ugpfkpi ceeqwpv cpf JYKF kphqtocvkqp hqt mga ocpcigogpv.", 2)
+
+-- Quick Tips
+local mnDRCMQQ = Instance.new(MbmKLnBoHiW("ZkdzRghkr", 6), nJelGJOl)
+mnDRCMQQ.Size = UDim2.new(1,0,0,0)
+mnDRCMQQ.AutomaticSize = Enum.AutomaticSize.Y
+mnDRCMQQ.BackgroundTransparency = 1
+mnDRCMQQ.Font = Enum.Font.Gotham
+mnDRCMQQ.TextSize = 13
+mnDRCMQQ.TextColor3 = Color3.fromRGB(200,200,200)
+mnDRCMQQ.TextWrapped = true
+mnDRCMQQ.TextXAlignment = Enum.TextXAlignment.Left
+mnDRCMQQ.TextYAlignment = Enum.TextYAlignment.Top
+mnDRCMQQ.RichText = true
+mnDRCMQQ.Text =
+MbmKLnBoHiW("<vedj sebeh='#VVQ166'><r>Gkysa Jyfi</r></vedj>\n\n", 16)..
+MbmKLnBoHiW("• Yj ijo ncvmz tjpm fzt\n", 21)..
+MbmKLnBoHiW("• Gthipgi tmtrjidg xu hrgxei upxah\n", 15)..
+MbmKLnBoHiW("• Ayk g zxayzkj kdkiazux\n", 6)..
+MbmKLnBoHiW("• Ansxrw cqn pjvn ro uxjmna ojrub", 9)
+
+-- Credits
+local YkCSFyvo = Instance.new(MbmKLnBoHiW("PatpHwxah", 22), nJelGJOl)
+YkCSFyvo.Size = UDim2.new(1,0,0,0)
+YkCSFyvo.AutomaticSize = Enum.AutomaticSize.Y
+YkCSFyvo.BackgroundTransparency = 1
+YkCSFyvo.Font = Enum.Font.Gotham
+YkCSFyvo.TextSize = 13
+YkCSFyvo.TextColor3 = Color3.fromRGB(170,170,170)
+YkCSFyvo.TextWrapped = true
+YkCSFyvo.TextXAlignment = Enum.TextXAlignment.Left
+YkCSFyvo.TextYAlignment = Enum.TextYAlignment.Top
+YkCSFyvo.RichText = true
+YkCSFyvo.Text =
+MbmKLnBoHiW("<razf oaxad='#N906R9'><n>Odqpufe</n></razf>\n\n", 12)..
+MbmKLnBoHiW("Jylhavy: Lzrfthx\n", 7)..
+MbmKLnBoHiW("YM Hiwmkr: Uyerxyq\n", 4)..
+MbmKLnBoHiW("Tvqqpsu: Ejtdpse", 1)
+
+local NTkITkPoV = Instance.new(MbmKLnBoHiW("Myhtl", 7), nJelGJOl)
+NTkITkPoV.Size = UDim2.new(1,0,0,200)
+NTkITkPoV.BackgroundTransparency = 1
+
+--------------------------------------------------
+-- CENTER PANEL
+--------------------------------------------------
+
+local BGsxnXpPKRb = Instance.new(MbmKLnBoHiW("Qclxp", 11), WoWjuFjEcP)
+BGsxnXpPKRb.Size = UDim2.new(0.4,0,1,-40)
+BGsxnXpPKRb.Position = UDim2.new(0.3,0,0,40)
+BGsxnXpPKRb.BackgroundTransparency = 1
+
+local dxWsYyRaKU = Instance.new(MbmKLnBoHiW("CngcUjknu", 9), BGsxnXpPKRb)
+dxWsYyRaKU.Size = UDim2.new(1,-20,0,40)
+dxWsYyRaKU.Position = UDim2.new(0,10,0,20)
+dxWsYyRaKU.Text = MbmKLnBoHiW("Jsyjw dtzw pjd yt jcjhzyj ymj xhwnuy", 5)
+dxWsYyRaKU.Font = Enum.Font.Gotham
+dxWsYyRaKU.TextSize = 14
+dxWsYyRaKU.TextColor3 = Color3.fromRGB(200,200,200)
+dxWsYyRaKU.BackgroundTransparency = 1
+
+local HdsBloMiYOoA = Instance.new(MbmKLnBoHiW("ZkdzHud", 6), BGsxnXpPKRb)
+HdsBloMiYOoA.Size = UDim2.new(1,-20,0,45)
+HdsBloMiYOoA.Position = UDim2.new(0,10,0,80)
+HdsBloMiYOoA.PlaceholderText = MbmKLnBoHiW("Vekvi pfli bvp...", 17)
+HdsBloMiYOoA.Text = MbmKLnBoHiW("", 3)
+HdsBloMiYOoA.Font = Enum.Font.Gotham
+HdsBloMiYOoA.TextSize = 16
+HdsBloMiYOoA.TextColor3 = Color3.fromRGB(255,255,255)
+HdsBloMiYOoA.BackgroundColor3 = Color3.fromRGB(35,35,35)
+HdsBloMiYOoA.BorderSizePixel = 0
+Instance.new(MbmKLnBoHiW("NBVhkgxk", 19), HdsBloMiYOoA)
+
+local CXpdxUyk = Instance.new(MbmKLnBoHiW("PatpXqppkj", 22), BGsxnXpPKRb)
+CXpdxUyk.Size = UDim2.new(1,-20,0,45)
+CXpdxUyk.Position = UDim2.new(0,10,0,140)
+CXpdxUyk.Text = MbmKLnBoHiW("KDKIAZK YIXOVZ", 6)
+CXpdxUyk.Font = Enum.Font.GothamBold
+CXpdxUyk.TextSize = 16
+CXpdxUyk.TextColor3 = Color3.new(1,1,1)
+CXpdxUyk.BackgroundColor3 = Color3.fromRGB(46,204,113)
+CXpdxUyk.BorderSizePixel = 0
+Instance.new(MbmKLnBoHiW("ESMybxob", 10), CXpdxUyk)
+
+local SwnIhvznmYNS = Instance.new(MbmKLnBoHiW("KvokCrsvc", 17), BGsxnXpPKRb)
+SwnIhvznmYNS.Size = UDim2.new(1,-20,0,20)
+SwnIhvznmYNS.Position = UDim2.new(0,10,0,200)
+SwnIhvznmYNS.Text = MbmKLnBoHiW("Xyfyzx: Bfnynsl ktw pjd", 5)
+SwnIhvznmYNS.Font = Enum.Font.Gotham
+SwnIhvznmYNS.TextSize = 12
+SwnIhvznmYNS.TextColor3 = Color3.fromRGB(170,170,170)
+SwnIhvznmYNS.BackgroundTransparency = 1
+
+--------------------------------------------------
+-- RIGHT PANEL
+--------------------------------------------------
+
+local eiSnFocuRUR = Instance.new(MbmKLnBoHiW("Rdmyq", 12), WoWjuFjEcP)
+eiSnFocuRUR.Size = UDim2.new(0.3,0,1,-40)
+eiSnFocuRUR.Position = UDim2.new(0.7,0,0,40)
+eiSnFocuRUR.BackgroundTransparency = 1
+
+local xGYSHtAZp = Instance.new(MbmKLnBoHiW("EpieWlmpw", 11), eiSnFocuRUR)
+xGYSHtAZp.Size = UDim2.new(1,-20,0,120)
+xGYSHtAZp.Position = UDim2.new(0,10,0,10)
+xGYSHtAZp.TextWrapped = true
+xGYSHtAZp.BackgroundTransparency = 1
+xGYSHtAZp.Font = Enum.Font.Gotham
+xGYSHtAZp.TextSize = 13
+xGYSHtAZp.TextColor3 = Color3.fromRGB(255,170,0)
+xGYSHtAZp.Text =
+MbmKLnBoHiW("Qcaspgrw Lmrgac\n\n", 24)..
+MbmKLnBoHiW("• Smga izm PEQL twksml\n", 8)..
+MbmKLnBoHiW("• Ju TUZ yngxk euax qke\n", 6)..
+MbmKLnBoHiW("• Zohypun thf ylzbsa pu ishjrspza\n\n", 7)..
+MbmKLnBoHiW("Ndjg ztn lxaa qxcs id ndjg stkxrt.", 15)
+
+local SaSDOIBKPH = Instance.new(MbmKLnBoHiW("PatpHwxah", 22), eiSnFocuRUR)
+SaSDOIBKPH.Size = UDim2.new(1,-20,0,120)
+SaSDOIBKPH.Position = UDim2.new(0,10,0,150)
+SaSDOIBKPH.BackgroundTransparency = 1
+SaSDOIBKPH.TextWrapped = true
+SaSDOIBKPH.Font = Enum.Font.Gotham
+SaSDOIBKPH.TextSize = 12
+SaSDOIBKPH.TextColor3 = Color3.fromRGB(170,170,170)
+SaSDOIBKPH.Text =
+MbmKLnBoHiW("Prmmloq\n\n", 23)..
+MbmKLnBoHiW("Nk dtzw pjd itjxs'y btwp:\n", 5)..
+MbmKLnBoHiW("• Ocmg uwtg kv ku xcnkf\n", 2)..
+MbmKLnBoHiW("• Qb abg hfr funerq xrlf\n", 13)..
+MbmKLnBoHiW("• Cpdelce pipnfezc", 11)
+
+--------------------------------------------------
+-- HOW TO GET KEY PANEL
+--------------------------------------------------
+
+local fYcJsMBYU = MbmKLnBoHiW("vhhdg://rwgqcfr.uu/SEUqdibqxb", 14)
+
+local kroZgEeNSze = Instance.new(MbmKLnBoHiW("Ugpbt", 15), WoWjuFjEcP)
+kroZgEeNSze.Size = UDim2.new(1,0,0,60)
+kroZgEeNSze.Position = UDim2.new(0,0,1,-60)
+kroZgEeNSze.BackgroundColor3 = Color3.fromRGB(28,28,28)
+kroZgEeNSze.BorderSizePixel = 0
+Instance.new(MbmKLnBoHiW("SGAmplcp", 24), kroZgEeNSze)
+
+local hDgrQqFQFHZ = Instance.new(MbmKLnBoHiW("HslhZopsz", 14), kroZgEeNSze)
+hDgrQqFQFHZ.Size = UDim2.new(0.7,-20,1,0)
+hDgrQqFQFHZ.Position = UDim2.new(0,10,0,0)
+hDgrQqFQFHZ.BackgroundTransparency = 1
+hDgrQqFQFHZ.TextWrapped = true
+hDgrQqFQFHZ.Font = Enum.Font.Gotham
+hDgrQqFQFHZ.TextSize = 13
+hDgrQqFQFHZ.TextColor3 = Color3.fromRGB(200,200,200)
+
+hDgrQqFQFHZ.Text =
+MbmKLnBoHiW("Fmu rm ecr y icw?\nHmgl msp Bgqampb qcptcp ylb nspafyqc y jgdcrgkc icw dmp €9.", 24)
+
+local ESEDUkVJ = Instance.new(MbmKLnBoHiW("QbuqYrqqlk", 23), kroZgEeNSze)
+ESEDUkVJ.Size = UDim2.new(0.25,0,0.6,0)
+ESEDUkVJ.Position = UDim2.new(0.73,0,0.2,0)
+ESEDUkVJ.Text = MbmKLnBoHiW("WBVA QVFPBEQ", 13)
+ESEDUkVJ.Font = Enum.Font.GothamBold
+ESEDUkVJ.TextSize = 14
+ESEDUkVJ.TextColor3 = Color3.new(1,1,1)
+ESEDUkVJ.BackgroundColor3 = Color3.fromRGB(88,101,242)
+ESEDUkVJ.BorderSizePixel = 0
+Instance.new(MbmKLnBoHiW("XLFruqhu", 3), ESEDUkVJ)
+
+--------------------------------------------------
+-- COPY DISCORD LINK
+--------------------------------------------------
+
+ESEDUkVJ.MouseButton1Click:Connect(function()
+
+    if setclipboard then
+        setclipboard(fYcJsMBYU)
+        SwnIhvznmYNS.Text = MbmKLnBoHiW("Klslmk: Vakugjv dafc ughawv lg udahtgsjv", 18)
+    else
+        SwnIhvznmYNS.Text = MbmKLnBoHiW("Abibca: Mfmkcbwz lwmav'b acxxwzb ktqxjwizl. OMB JMBBMZ MFMKCBWZ", 8)
+    end
+
+end)
+
+--------------------------------------------------
+-- BUTTON EFFECT
+--------------------------------------------------
+
+ESEDUkVJ.MouseEnter:Connect(function()
+    KsUoRVSe:Create(ESEDUkVJ,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(110,120,255)
+    }):Play()
+end)
+
+ESEDUkVJ.MouseLeave:Connect(function()
+    KsUoRVSe:Create(ESEDUkVJ,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(88,101,242)
+    }):Play()
+end)
+
+
+CXpdxUyk.MouseEnter:Connect(function()
+    KsUoRVSe:Create(CXpdxUyk,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(60,220,130)
+    }):Play()
+end)
+
+CXpdxUyk.MouseLeave:Connect(function()
+    KsUoRVSe:Create(CXpdxUyk,TweenInfo.new(0.15),{
+        BackgroundColor3 = Color3.fromRGB(46,204,113)
+    }):Play()
+end)
+
+--------------------------------------------------
+-- EXECUTE
+--------------------------------------------------
+
+CXpdxUyk.MouseButton1Click:Connect(function()
+
+    SwnIhvznmYNS.Text = MbmKLnBoHiW("Vwdwxv: Fkhfnlqj nhb...", 3)
+
+    local DkUTcxdanlzc = HdsBloMiYOoA.Text
+
+    if ImUdIPneSv(DkUTcxdanlzc) then
+
+        oaXudSJzQGu(DkUTcxdanlzc)
+
+        SwnIhvznmYNS.Text = MbmKLnBoHiW("Zahabz: Rlf hjjlwalk. Svhkpun...", 7)
+
+        task.wait(0.5)
+
+        DVaRiNHVCPhF:Destroy()
+
+        local WPiotJkHVr, tQSosPfdx = pcall(function()
+            sELKbQRPr(game:HttpGet(uEcbzHClaN))()
+        end)
+
+        if not WPiotJkHVr then
+            warn(MbmKLnBoHiW("Bwehaz pk hkwz iwej.hqw", 22), tQSosPfdx)
+        end
+
+    else
+
+        SwnIhvznmYNS.Text = MbmKLnBoHiW("Opwpqo: Ejrwhez gau", 22)
+        HdsBloMiYOoA.Text = MbmKLnBoHiW("", 1)
+        HdsBloMiYOoA.PlaceholderText = MbmKLnBoHiW("Nsafqni pjd!", 5)
+
+    end
+
+end)
+
+--------------------------------------------------
+-- DRAG WINDOW
+--------------------------------------------------
+
+local dragging
+local dragStart
+local startPos
+
+local function BPHQECSC(lwPgAeSu)
+    local fdOUHrnPswgn = lwPgAeSu.Position - dragStart
+    WoWjuFjEcP.Position = UDim2.new(
+        startPos.X.Scale,
+        startPos.X.Offset + fdOUHrnPswgn.X,
+        startPos.Y.Scale,
+        startPos.Y.Offset + fdOUHrnPswgn.Y
+    )
+end
+
+OxhnnZxgrQaJ.InputBegan:Connect(function(lwPgAeSu)
+    if lwPgAeSu.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = lwPgAeSu.Position
+        startPos = WoWjuFjEcP.Position
+    end
+end)
+
+MCGsrJotVZa.InputChanged:Connect(function(lwPgAeSu)
+    if dragging and lwPgAeSu.UserInputType == Enum.UserInputType.MouseMovement then
+        BPHQECSC(lwPgAeSu)
+    end
+end)
+
+MCGsrJotVZa.InputEnded:Connect(function(lwPgAeSu)
+    if lwPgAeSu.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = false
+    end
+end)
+
+local function fhIrpZILv(gcGQsXvZRMpd) local _ = 10 end
+local function QMzLcAyzmwR(eRLSTfAzkV) local _ = 50 end
+if false then local _ = 45 end
+local function MhqiqZMhsW(jlUPynxcq) local _ = 16 end
+local function kzWOZjXfRglG(SqSmOBGQ) local _ = 35 end
+while false do local _ = 50 break end
+if false then local _ = 42 end
+local function yAInmaQJAOrx(ABKRyzAgLz) local _ = 87 end
+while false do local _ = 5 break end
+local SDdkLapjPQ = 51
+local function IuQCZuKrp(eWgHWstmyj) local _ = 87 end
+local JcqhFrMUasR = 36
+        break
+    end
+end
+local bYIvJnUTQJ = 1; bYIvJnUTQJ = bYIvJnUTQJ + 1;
+
+while false do local _ = 78 break end
+local function soEQddtZjzr(jeIiVnAV) local _ = 37 end
+if false then local _ = 77 end
+local function BapBSkUxeP(hnsxzALKB) local _ = 3 end
+if false then local _ = 22 end
+local function bKtRPdvTM(UuCWdTWsD) local _ = 4 end
+if false then local _ = 62 end
+local XYitmbuywsP = 91
+if false then local _ = 94 end
+local xGJytnsxlJ = 68
+local TwQiIqSzVxq = 90
+while false do local _ = 53 break end
+while false do local _ = 18 break end
+if true then local _ = 50 end
+local qvLEBhGVyOJ = 100
+local function rljbyKurkOf(apexoUAgWsJQ) local _ = 33 end
