@@ -8,6 +8,12 @@ local MAIN_URL = "https://raw.githubusercontent.com/Eskymaq/quantum/main/main.lu
 
 local WEBHOOK = "https://discord.com/api/webhooks/1482711975590105220/IgbNNg5zcf-ecZo70yXTk04Ohed9JO7EF4YmnwPzhdS8UOAzKda7A_bkZ34C-GSHdKMf"
 
+local ALLOWED_PLACE = 12673840215
+
+if game.PlaceId ~= ALLOWED_PLACE then
+    return warn("This script only works in the allowed game.")
+end
+
 --------------------------------------------------
 -- LOG SYSTEM
 --------------------------------------------------
